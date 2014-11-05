@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "profitloss.ProfitLossViewModel",
+        "designer|userClassName": "profitloss.ProfitLossViewModel"
+    },
+    "designerId": "37d12793-bc88-4da5-904f-d6381156bcc6"
+}

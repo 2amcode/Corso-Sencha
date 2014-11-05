@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "FullProfitLoss"
+        ],
+        "name": "Dashboard",
+        "stores": [
+            "ProfitLoss"
+        ],
+        "views": [
+            "main.Main",
+            "profitloss.ProfitLoss"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

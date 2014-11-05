@@ -1,0 +1,85 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mygridpanel",
+        "designer|userClassName": "MyGridPanel",
+        "title": "Profit and Loss"
+    },
+    "name": "MyGridPanel",
+    "designerId": "da58e06b-3b1f-41c6-a06a-0093c4e47f75",
+    "viewControllerInstanceId": "d6bda4d1-fa2f-4da8-847c-3b40f8d905dd",
+    "viewModelInstanceId": "bef3fb96-fb82-413a-b038-ef71ca4dfaaf",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "string",
+                "text": "String"
+            },
+            "name": "MyColumn",
+            "designerId": "e540c73b-05f4-49a9-bece-8ad00eb98d9a"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "number",
+                "text": "Number"
+            },
+            "name": "MyNumberColumn",
+            "designerId": "55a02f99-f89b-4cfc-bbcb-59cbf886245d"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "date",
+                "text": "Date"
+            },
+            "name": "MyDateColumn",
+            "designerId": "1e713e09-b846-43fa-a6bf-71bd8dec7425"
+        },
+        {
+            "type": "Ext.grid.column.Boolean",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "bool",
+                "text": "Boolean"
+            },
+            "name": "MyBooleanColumn",
+            "designerId": "40490e89-76b2-440b-998d-768ad6ac4352"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGridView",
+            "designerId": "aea13bcb-8523-4001-83ac-a336db13c9c6"
+        }
+    ]
+}

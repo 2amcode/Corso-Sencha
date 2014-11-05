@@ -1,0 +1,122 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeTab": 0,
+        "defaults": [
+            "{",
+            "    tabConfig : {",
+            "        plugins : 'responsive',",
+            "",
+            "        responsiveConfig : {",
+            "            wide : {",
+            "                iconAlign : 'left',",
+            "                textAlign : 'left',",
+            "                flex      : 0",
+            "            },",
+            "            tall : {",
+            "                iconAlign : 'top',",
+            "                textAlign : 'center',",
+            "                flex      : 1",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+        ],
+        "designer|initialView": true,
+        "designer|userAlias": "mainmain",
+        "designer|userClassName": "main.Main",
+        "header": [
+            "{",
+            "    layout : {",
+            "        align : 'stretchmax'",
+            "    },",
+            "    iconCls : 'exec-header-icon',",
+            "    title : {",
+            "        text      : 'MyBiz',",
+            "        textAlign : 'center',",
+            "        flex      : 0,",
+            "        minWidth  : 160",
+            "    }",
+            "}"
+        ],
+        "headerPosition": "left",
+        "height": null,
+        "minHeight": 500,
+        "plugins": "viewport",
+        "tabBarHeaderPosition": 1,
+        "tabRotation": [
+            "0"
+        ],
+        "titleRotation": [
+            "0"
+        ],
+        "width": null
+    },
+    "name": "MyTabPanel",
+    "configAlternates": {
+        "header": "object"
+    },
+    "designerId": "eb01f239-78d5-414d-bc59-47da82ad9cfe",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "plugins",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "5a0d9010-85f6-42ff-a956-28f3fde824c2",
+    "viewModelInstanceId": "78ca6172-14a3-43c5-bce3-f247fb4b9da6",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "flex": 1
+            },
+            "name": "MyTabBar",
+            "designerId": "4bf5d487-bc55-497d-a4f1-e42cce9458c8",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "profitloss.profitloss",
+            "designerId": "7f25d657-c0ba-464a-8219-67c33b9e16a4",
+            "masterInstanceId": "c7370493-19c0-4865-9e5d-3609381bd878",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null
+                    },
+                    "name": "TabConfig4",
+                    "designerId": "08666476-a5c3-4c65-b06f-47c22d980d30"
+                }
+            ]
+        }
+    ]
+}

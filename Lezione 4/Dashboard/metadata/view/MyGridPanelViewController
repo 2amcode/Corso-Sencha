@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mygridpanel",
+        "designer|userClassName": "MyGridPanelViewController"
+    },
+    "designerId": "d6bda4d1-fa2f-4da8-847c-3b40f8d905dd"
+}

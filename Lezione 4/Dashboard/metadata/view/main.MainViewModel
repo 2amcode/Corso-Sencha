@@ -1,0 +1,16 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{name:'Dashboard'}"
+        ],
+        "designer|userAlias": "main",
+        "designer|userClassName": "main.MainViewModel"
+    },
+    "designerId": "78ca6172-14a3-43c5-bce3-f247fb4b9da6"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "profitloss",
+        "designer|userClassName": "profitloss.ProfitLossViewController"
+    },
+    "designerId": "228936f9-027d-4ce1-bd8f-8468673f9d32"
+}
