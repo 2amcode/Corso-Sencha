@@ -1,0 +1,13 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MetaProfitLoss"
+    },
+    "name": "MyModel",
+    "designerId": "b214b366-fc62-4a4f-9849-cec116b81ab4"
+}

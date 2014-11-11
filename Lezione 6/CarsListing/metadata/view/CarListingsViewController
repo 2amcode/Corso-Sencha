@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carlistings",
+        "designer|userClassName": "CarListingsViewController"
+    },
+    "designerId": "4ed69020-ea1a-4d02-95bb-04988e3a7397"
+}

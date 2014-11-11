@@ -1,0 +1,61 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carlistings",
+        "designer|userClassName": "CarListingsViewModel"
+    },
+    "designerId": "2e33ead2-eb22-4fbd-824d-eb98602174c6",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "designer|displayName": "",
+                "model": "CarData",
+                "name": "carData"
+            },
+            "name": "MyStore",
+            "designerId": "c3962cf0-24c5-4913-b2fb-b20d64d018bd",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "data/cars.json"
+                    },
+                    "name": "MyAjaxProxy1",
+                    "designerId": "f42a221e-aeb0-432d-9bed-03c96395c480",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "data"
+                            },
+                            "name": "MyJsonReader1",
+                            "designerId": "5c618793-69a8-427c-8ac1-f50bc6edaea0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

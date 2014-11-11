@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CarChartStore",
+        "model": "CarChart",
+        "storeId": "CarChartStore"
+    },
+    "name": "MyStore",
+    "designerId": "0d0477fa-9c36-4a1a-85ae-e87db2b5797c"
+}

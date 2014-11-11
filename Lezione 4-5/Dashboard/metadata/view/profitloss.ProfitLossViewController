@@ -1,0 +1,69 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "profitloss",
+        "designer|userClassName": "profitloss.ProfitLossViewController"
+    },
+    "designerId": "228936f9-027d-4ce1-bd8f-8468673f9d32",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRegionItemClick",
+                "implHandler": [
+                    "var view = this.getView();",
+                    "",
+                    "  var  filter = {",
+                    "        // The id ensures that this filter will be replaced by subsequent calls",
+                    "        // to this method (while leaving others in place).",
+                    "        id       : 'regionFilter',",
+                    "        property : 'region_filter',",
+                    "        operator : 'in',",
+                    "        value    : []",
+                    "    };",
+                    "",
+                    "  var  regionMenu = this.lookupReference('regionsButton').menu;",
+                    "// note before we had set the reference on our button to regionsButton.  This is how we'll gain access to that component",
+                    "",
+                    "",
+                    "",
+                    "regionMenu.items.each(function (item) {",
+                    "    if (item.checked) {",
+                    "        filter.value.push(item.value);",
+                    "    }",
+                    "});",
+                    "",
+                    "",
+                    "if (filter.value.length === regionMenu.items.length) {",
+                    "    // No need for a filter that includes everything, so remove it (in case it",
+                    "    // was there - harmless if it wasn't)",
+                    "    view.store.getFilters().removeByKey(filter.id);",
+                    "} else {",
+                    "    view.store.getFilters().add(filter);",
+                    "}",
+                    "",
+                    "if(filter.value.length===1){",
+                    "    ",
+                    "    //console.log(\"Solo una colonna selezionata\");",
+                    "    view.columnManager.getFirst().hide();",
+                    "}else{",
+                    "    view.columnManager.getFirst().show();",
+                    "    ",
+                    "}"
+                ]
+            },
+            "name": "onRegionItemClick",
+            "designerId": "12556477-960d-496c-aeb1-1df8aff76d89"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+   "name": "CarsListings",
+   "requires": [
+      "sencha-charts"
+   ],
+   "id": "32e789a4-fe69-4f22-bb71-facb52a5b6d9",
+   "theme": "ext-theme-crisp-b2bbb204-8748-4a7c-a283-877260c99f21",
+   "resources": [],
+   "js": [
+      {
+         "path": "app.js",
+         "bundle": true
+      }
+   ],
+   "css": [
+      {
+         "path": "bootstrap.css",
+         "bootstrap": true
+      }
+   ]
+}

@@ -1,0 +1,103 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "profitloss.ProfitLossViewModel",
+        "designer|userClassName": "profitloss.ProfitLossViewModel"
+    },
+    "designerId": "37d12793-bc88-4da5-904f-d6381156bcc6",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "MetaProfitLoss",
+                "name": "metaProfitLoss"
+            },
+            "name": "MyStore",
+            "designerId": "865d4c42-7fec-4fe7-b8fe-fc97253a7acb",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "resources/data/meta_data.json"
+                    },
+                    "name": "MyAjaxProxy1",
+                    "designerId": "73f3ca3d-a879-4ec6-bbb1-5989d7a64906"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMetaDataLoad",
+                        "implHandler": [
+                            "var me = this,",
+                            "    references = me.getReferences(),",
+                            "    view = me.getView(),",
+                            "    items = [],",
+                            "    columns = [ view.regionColumn ];",
+                            "",
+                            "    // iterate each record in the store",
+                            "store.each(function (metaRecord) {",
+                            "    var type = metaRecord.data.type,",
+                            "        value = metaRecord.data.value,",
+                            "",
+                            "        menuItem = {",
+                            "            checked     : true,",
+                            "            hideOnClick : false",
+                            "        };",
+                            "",
+                            "    // we only care about region data",
+                            "    if (type === 'region') {",
+                            "        items.push(Ext.apply({",
+                            "            text  : metaRecord.data.display,",
+                            "            value : value,",
+                            "            type  : type,",
+                            "",
+                            "            listeners : {",
+                            "                click : me.onRegionItemClick,",
+                            "                scope : me",
+                            "            }",
+                            "        },menuItem));",
+                            "    }",
+                            "});",
+                            "",
+                            "items.sort(function (lhs, rhs) {",
+                            "    return (lhs.text < rhs.text) ? -1 : ((rhs.text < lhs.text) ? 1 : 0);",
+                            "});",
+                            "",
+                            "// We want to tinker with the UI in batch so we don't trigger multiple layouts",
+                            "Ext.batchLayouts(function () {",
+                            "    references.regionsButton.menu.add(items);",
+                            "",
+                            "    view.store.load(); // displays loadMask so include in layout batch",
+                            "});"
+                        ],
+                        "name": "load",
+                        "scope": "me"
+                    },
+                    "name": "onMetaDataLoad",
+                    "designerId": "2f8a83fd-3b30-4ace-95ba-c3ea5bbf1628"
+                }
+            ]
+        }
+    ]
+}

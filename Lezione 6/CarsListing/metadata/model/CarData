@@ -1,0 +1,125 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CarData"
+    },
+    "name": "MyModel",
+    "designerId": "2ab62631-fcf1-40c6-93e6-7bc4632e8bcc",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "manufacturer"
+            },
+            "name": "MyField",
+            "designerId": "aa68a391-7b60-48ef-9801-c0387bdb9136"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "model"
+            },
+            "name": "MyField1",
+            "designerId": "a32c4abd-be0a-47f3-a69b-17748807c384",
+            "cn": [
+                {
+                    "type": "formatvalidation",
+                    "reference": {
+                        "name": "validations",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "field": "model",
+                        "matcher": "/[0-9]*/",
+                        "message": "Inserire un numero"
+                    },
+                    "name": "MyFormatValidation",
+                    "designerId": "5bce17cc-9c7e-4cd8-b2a0-f60f903ba938"
+                },
+                {
+                    "type": "lengthvalidation",
+                    "reference": {
+                        "name": "validations",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "field": "model",
+                        "max": 6,
+                        "min": 3
+                    },
+                    "name": "MyLengthValidation",
+                    "designerId": "bb57d202-661a-43b8-ae41-d74c05d49895"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price"
+            },
+            "name": "MyField2",
+            "designerId": "bdcdbb86-9437-4ca4-b565-2773ac6c3c27"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wiki"
+            },
+            "name": "MyField3",
+            "designerId": "2a7be433-89c4-411e-8f0b-75b69a6ef5ba"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "img"
+            },
+            "name": "MyField4",
+            "designerId": "4ee3107b-948b-4e50-9b27-3d66efee1472"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "quality"
+            },
+            "name": "MyField5",
+            "designerId": "c972b333-c15f-45bd-b9d1-575fb550a1d1"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "name": "CarsListing",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.2.270",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "projectHasEnabledWebServer": true,
+        "lockUrlPrefix": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1253-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1168-inputEl": "a new version of the framework is available",
+        "sdkPath": "",
+        "displayfield-ExtBox1-1227-inputEl": "a new version of the framework is available",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1934,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "8127d112-d66b-4420-82a0-7a84ad625431",
+            "2e33ead2-eb22-4fbd-824d-eb98602174c6",
+            "4ed69020-ea1a-4d02-95bb-04988e3a7397"
+        ],
+        "store": [
+            "c0ebde2b-a1a1-47d9-abc5-e684e0120b7f",
+            "0d0477fa-9c36-4a1a-85ae-e87db2b5797c"
+        ],
+        "controller": [],
+        "model": [
+            "2ab62631-fcf1-40c6-93e6-7bc4632e8bcc",
+            "8c032ff6-38d8-45e1-ae50-d61db9cb2e32"
+        ],
+        "resource": [
+            "bdb39ff7-7621-4192-a59f-a3bfbe1292e1",
+            "76febf1b-2f1b-4051-8a02-0859d01d9287",
+            "b2bbb204-8748-4a7c-a283-877260c99f21"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
