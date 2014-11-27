@@ -1,0 +1,68 @@
+{
+    "name": "MVVM",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.2.270",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lockUrlPrefix": true,
+        "installStatus": "Not Installed",
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1943,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "1495fd21-ea48-441d-b4c3-4ea35292814b",
+            "cee4e0c4-757a-40b3-bb88-8be9ef6a9d82",
+            "7b813656-f546-4760-a0cb-2b09c0b52d48",
+            "1d6409bc-1c7b-4c50-bf48-7bb9ba28d69f",
+            "026e22e1-ee60-48c8-a882-c477aad0217f",
+            "0bc492ee-e6ed-401e-b245-545e7b73a0da",
+            "382dc865-e995-43b2-aa95-e02c5be0b35d",
+            "58ead87d-2bae-4a95-b81e-858fdc969cf7",
+            "93ab1393-ca9a-4b75-990f-6593d744a17b"
+        ],
+        "store": [
+            "674957ba-4c50-4a70-8035-9f978dcc2212"
+        ],
+        "controller": [
+            "e55ea149-7346-443c-8bf8-cdab06ce37d2"
+        ],
+        "model": [
+            "6161eb61-25db-487c-94cd-0972bb428076"
+        ],
+        "resource": [
+            "01ecdde6-f0f4-4aac-ac0d-fce1dc0b1656",
+            "c82db6a8-3446-4916-99a7-f2de11cc1d05"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

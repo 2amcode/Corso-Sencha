@@ -1,0 +1,77 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "MasterView",
+        "designer|userClassName": "Master",
+        "itemId": null,
+        "store": "People",
+        "title": "Master Panel",
+        "width": 160
+    },
+    "name": "MyGridPanel",
+    "designerId": "1d6409bc-1c7b-4c50-bf48-7bb9ba28d69f",
+    "viewControllerInstanceId": "0bc492ee-e6ed-401e-b245-545e7b73a0da",
+    "viewModelInstanceId": "026e22e1-ee60-48c8-a882-c477aad0217f",
+    "cn": [
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyGridView",
+            "designerId": "753fe521-eeaa-48f4-bc7f-18be8bcbcc25"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "name",
+                "flex": 1,
+                "text": "Name"
+            },
+            "name": "MyColumn1",
+            "designerId": "eb08ba5b-8493-4977-ada3-f30e171e5b31"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "email",
+                "flex": 1,
+                "text": "Email"
+            },
+            "name": "MyColumn2",
+            "designerId": "41a58d5a-fdb4-48df-b485-e142f2091d08"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "phone",
+                "flex": 1,
+                "text": "Phone"
+            },
+            "name": "MyColumn3",
+            "designerId": "f4aca810-c70a-46c0-a529-b308dfb3521b"
+        }
+    ]
+}

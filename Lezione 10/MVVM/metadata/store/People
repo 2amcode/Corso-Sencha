@@ -1,0 +1,39 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            " [",
+            "        { ",
+            "            'name'  : 'Lisa',  ",
+            "            'email' : 'lisa@simpsons.com',",
+            "            'phone' : '555-111-1224' ",
+            "        },",
+            "        { ",
+            "            'name'  : 'Bart',  ",
+            "            'email' : 'bart@simpsons.com',",
+            "            'phone' : '555-222-1234'",
+            "        },",
+            "        { ",
+            "            'name'  : 'Homer', ",
+            "            'email' : 'homer@simpsons.com',",
+            "            'phone' : '555-222-1244'",
+            "        },",
+            "        { ",
+            "            'name'  : 'Marge', ",
+            "            'email' : 'marge@simpsons.com',",
+            "            'phone' : '555-222-1254'",
+            "        }",
+            "    ]"
+        ],
+        "designer|userClassName": "People",
+        "model": "Person",
+        "storeId": "People"
+    },
+    "name": "MyStore",
+    "designerId": "674957ba-4c50-4a70-8035-9f978dcc2212"
+}

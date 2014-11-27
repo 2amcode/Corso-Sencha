@@ -1,0 +1,16 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{rec:null}"
+        ],
+        "designer|userAlias": "detailform",
+        "designer|userClassName": "DetailViewModel"
+    },
+    "designerId": "58ead87d-2bae-4a95-b81e-858fdc969cf7"
+}

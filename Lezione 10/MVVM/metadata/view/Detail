@@ -1,0 +1,104 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": null,
+        "designer|uiInterfaceName": "default-framed",
+        "designer|userAlias": "DetailView",
+        "designer|userClassName": "Detail",
+        "frame": true,
+        "height": null,
+        "padding": 10,
+        "title": "Detail Panel",
+        "width": null
+    },
+    "name": "MyForm",
+    "designerId": "382dc865-e995-43b2-aa95-e02c5be0b35d",
+    "viewControllerInstanceId": "93ab1393-ca9a-4b75-990f-6593d744a17b",
+    "viewModelInstanceId": "58ead87d-2bae-4a95-b81e-858fdc969cf7",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": "{rec.name}",
+                "fieldLabel": "Name",
+                "layout|anchor": "100%"
+            },
+            "name": "MyTextField",
+            "designerId": "d69b63fc-c26f-4df2-9791-9b65751f670a",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "bind",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": "{rec.email}",
+                "fieldLabel": "Email",
+                "layout|anchor": "100%"
+            },
+            "name": "MyTextField1",
+            "designerId": "e236206b-ae2f-4f4d-a661-35436577699c",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "bind",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": "{rec.phone}",
+                "fieldLabel": "Phone",
+                "layout|anchor": "100%"
+            },
+            "name": "MyTextField2",
+            "designerId": "a8a25421-2f08-4552-821b-6c909dcd51b6",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "bind",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Save"
+            },
+            "name": "MyButton",
+            "designerId": "7bb72775-bed0-4a00-84af-e50d08cc2639"
+        }
+    ]
+}
