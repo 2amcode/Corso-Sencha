@@ -1,0 +1,54 @@
+{
+    "name": "Domino",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.2.270",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1943,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "0d0b37db-f9d1-4759-a099-70bd821a73c0",
+            "8dcf4031-3dfb-4292-9165-0490df4b8182",
+            "c5bdc12c-101b-44ae-a0a5-2a8a16dc378e"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "3274a338-5a4a-4883-a036-4ba98e695216",
+            "41e52571-381c-409e-b1d7-53edd2fb2d3d"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

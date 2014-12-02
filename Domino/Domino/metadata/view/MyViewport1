@@ -1,0 +1,157 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|userAlias": "myviewport1",
+        "designer|userClassName": "MyViewport1",
+        "layout": "vbox"
+    },
+    "name": "MyViewport1",
+    "designerId": "0d0b37db-f9d1-4759-a099-70bd821a73c0",
+    "viewControllerInstanceId": "c5bdc12c-101b-44ae-a0a5-2a8a16dc378e",
+    "viewModelInstanceId": "8dcf4031-3dfb-4292-9165-0490df4b8182",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "height": "100%",
+                "layout": "hbox",
+                "layout|flex": 1,
+                "width": "100%"
+            },
+            "name": "MyContainer1",
+            "designerId": "05d93ac6-9dcf-42af-a92d-2506295837b3",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": "x-panel promotionPanel",
+                        "cls": "",
+                        "layout|flex": 3,
+                        "title": "PromotionPanel",
+                        "width": "100%"
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "aa506d8c-8e27-4383-9f2e-2380ba42ce24",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "height": "40%",
+                                "layout": "vbox"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "b1320c57-087b-4dfc-b251-91444a9ae66b"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|pack": "end",
+                                "height": "40%",
+                                "layout": "vbox"
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "0847a908-dab6-4a3a-9cfb-b2dbcd5ef850",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "title": "Area Promozionale",
+                                        "titleAlign": "center"
+                                    },
+                                    "name": "MyPanel4",
+                                    "designerId": "0e095138-5ec3-442e-88d0-90ca869f6502",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.XTemplate",
+                                            "reference": {
+                                                "name": "tpl",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "tpl",
+                                                "implHandler": [
+                                                    "Area promozionale"
+                                                ]
+                                            },
+                                            "name": "tpl",
+                                            "designerId": "720857fc-eaa5-4764-8747-5985fd3fa605"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "container|pack": "center",
+                                "layout": "vbox"
+                            },
+                            "name": "MyContainer4",
+                            "designerId": "db8bf5eb-a807-452a-b128-40f1d8813d69"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 2,
+                        "maxWidth": 300,
+                        "minWidth": 300,
+                        "title": "Login",
+                        "width": ""
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "7fc079ba-9eac-48e4-81d1-6b1a19a99fc1"
+                }
+            ]
+        }
+    ]
+}
