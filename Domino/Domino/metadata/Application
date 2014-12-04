@@ -9,8 +9,13 @@
         "name": "Domino",
         "views": [
             "MyViewport1",
+<<<<<<< HEAD
             "LoginForm",
             "LoginMenu"
+=======
+            "LoginMenu",
+            "LoginForm"
+>>>>>>> origin/master
         ]
     },
     "name": "Application",

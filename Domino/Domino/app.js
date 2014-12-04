@@ -22,8 +22,13 @@ Ext.Loader.setConfig({
 Ext.application({
     views: [
         'MyViewport1',
+<<<<<<< HEAD
         'LoginForm',
         'LoginMenu'
+=======
+        'LoginMenu',
+        'LoginForm'
+>>>>>>> origin/master
     ],
     name: 'Domino',
 
