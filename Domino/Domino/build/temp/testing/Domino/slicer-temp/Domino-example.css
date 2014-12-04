@@ -82,8 +82,8 @@
 /* including package ext-theme-neutral */
 /* including package ext-theme-neptune */
 /* including package ext-theme-crisp */
-/* including package ext-theme-crisp-41e52571-381c-409e-b1d7-53edd2fb2d3d */
-/* including package ext-theme-crisp-41e52571-381c-409e-b1d7-53edd2fb2d3d */
+/* including package ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44 */
+/* including package ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44 */
 /* including package ext-theme-crisp */
 /** @class Ext.resizer.Resizer */
 /* including package ext-theme-neptune */
@@ -33190,8 +33190,28 @@ tr.x-grid-subtable-row {
   background-position: 2px -2px;
 }
 
-/* including package ext-theme-crisp-41e52571-381c-409e-b1d7-53edd2fb2d3d */
-/* line 4, ../../../../../packages/ext-theme-crisp-41e52571-381c-409e-b1d7-53edd2fb2d3d/sass/src/Component.scss */
-.promotionPanel {
-  background-color: #009ee2;
+/* including package ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44 */
+/* line 3, ../../../../../packages/ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44/sass/src/Component.scss */
+.promotionalPanel {
+  background: #264052;
+}
+
+/* line 11, ../../../../../packages/ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44/sass/src/Component.scss */
+.loginPanel {
+  background: transparent;
+}
+
+/* line 18, ../../../../../packages/ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44/sass/src/Component.scss */
+.logoTecsisnet {
+  text-align: right;
+}
+
+/* line 23, ../../../../../packages/ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44/sass/src/Component.scss */
+.promotionalContainer {
+  background: #264052!important;
+}
+
+/* line 31, ../../../../../packages/ext-theme-crisp-1cee1860-abbf-4f14-a1a8-51f0c164ef44/sass/src/Component.scss */
+.loginContainer {
+  background: #ccc;
 }

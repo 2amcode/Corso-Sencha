@@ -19,8 +19,9 @@ Ext.define('Domino.view.MyViewport1', {
 
     requires: [
         'Domino.view.MyViewport1ViewModel',
-        'Ext.panel.Panel',
-        'Ext.XTemplate'
+        'Ext.form.Panel',
+        'Ext.form.field.Text',
+        'Ext.button.Button'
     ],
 
     viewModel: {
@@ -35,66 +36,63 @@ Ext.define('Domino.view.MyViewport1', {
         {
             xtype: 'container',
             flex: 1,
-            height: '100%',
-            width: '100%',
             layout: {
                 type: 'hbox',
                 align: 'stretch'
             },
             items: [
                 {
-                    xtype: 'panel',
+                    xtype: 'container',
                     flex: 3,
-                    baseCls: 'x-panel promotionPanel',
-                    cls: '',
-                    width: '100%',
-                    title: 'PromotionPanel',
+                    baseCls: 'x-container promotionalContainer',
+                    layout: 'border',
                     items: [
                         {
                             xtype: 'container',
-                            height: '40%',
-                            layout: {
-                                type: 'vbox',
-                                align: 'stretch'
-                            }
-                        },
-                        {
-                            xtype: 'container',
-                            height: '40%',
-                            layout: {
-                                type: 'vbox',
-                                align: 'stretch',
-                                pack: 'end'
-                            },
-                            items: [
-                                {
-                                    xtype: 'panel',
-                                    flex: 1,
-                                    tpl: [
-                                        'Area promozionale'
-                                    ],
-                                    title: 'Area Promozionale',
-                                    titleAlign: 'center'
-                                }
-                            ]
-                        },
-                        {
-                            xtype: 'container',
-                            layout: {
-                                type: 'vbox',
-                                align: 'stretch',
-                                pack: 'center'
-                            }
+                            flex: 1,
+                            region: 'center',
+                            margin: 50,
+                            style: 'background:red;',
+                            layout: 'border'
                         }
                     ]
                 },
                 {
-                    xtype: 'panel',
-                    flex: 2,
-                    maxWidth: 300,
+                    xtype: 'container',
+                    flex: 1,
+                    baseCls: 'x-container loginContainer',
                     minWidth: 300,
-                    width: '',
-                    title: 'Login'
+                    width: 300,
+                    layout: 'border',
+                    items: [
+                        {
+                            xtype: 'form',
+                            flex: 1,
+                            region: 'center',
+                            margin: '200 0 200 0',
+                            minWidth: 300,
+                            layout: 'auto',
+                            bodyPadding: 10,
+                            header: false,
+                            title: 'My Form',
+                            items: [
+                                {
+                                    xtype: 'textfield',
+                                    fieldLabel: 'Login',
+                                    labelWidth: 80
+                                },
+                                {
+                                    xtype: 'textfield',
+                                    fieldLabel: 'Password',
+                                    labelWidth: 80
+                                },
+                                {
+                                    xtype: 'button',
+                                    text: 'Accedi'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

@@ -18,7 +18,7 @@
         "exportPath": "",
         "spacesToIndent": 4,
         "sdkPath": "",
-        "lineEnding": "LF",
+        "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false,
         "buildShouldOverwriteIndex": true,
@@ -36,16 +36,16 @@
     "framework": "ext50",
     "viewOrderMap": {
         "view": [
-            "0d0b37db-f9d1-4759-a099-70bd821a73c0",
-            "8dcf4031-3dfb-4292-9165-0490df4b8182",
-            "c5bdc12c-101b-44ae-a0a5-2a8a16dc378e"
+            "126613e1-839a-4e9b-83e9-9477aed831e7",
+            "e3020f76-6bae-41af-9884-db94487c75cc",
+            "d04e7452-e1dc-4f15-9c1b-7af0aba1f3a1"
         ],
         "store": [],
         "controller": [],
         "model": [],
         "resource": [
-            "3274a338-5a4a-4883-a036-4ba98e695216",
-            "41e52571-381c-409e-b1d7-53edd2fb2d3d"
+            "70f3c84c-3af6-45ab-b1cc-78cf4a25cfa2",
+            "1cee1860-abbf-4f14-a1a8-51f0c164ef44"
         ],
         "app": [
             "application"

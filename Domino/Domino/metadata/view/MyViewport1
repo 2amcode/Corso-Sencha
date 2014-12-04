@@ -13,9 +13,9 @@
         "layout": "vbox"
     },
     "name": "MyViewport1",
-    "designerId": "0d0b37db-f9d1-4759-a099-70bd821a73c0",
-    "viewControllerInstanceId": "c5bdc12c-101b-44ae-a0a5-2a8a16dc378e",
-    "viewModelInstanceId": "8dcf4031-3dfb-4292-9165-0490df4b8182",
+    "designerId": "126613e1-839a-4e9b-83e9-9477aed831e7",
+    "viewControllerInstanceId": "d04e7452-e1dc-4f15-9c1b-7af0aba1f3a1",
+    "viewModelInstanceId": "e3020f76-6bae-41af-9884-db94487c75cc",
     "cn": [
         {
             "type": "Ext.container.Container",
@@ -26,30 +26,28 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "stretch",
-                "height": "100%",
                 "layout": "hbox",
-                "layout|flex": 1,
-                "width": "100%"
+                "layout|flex": 1
             },
-            "name": "MyContainer1",
-            "designerId": "05d93ac6-9dcf-42af-a92d-2506295837b3",
+            "name": "MyContainer",
+            "designerId": "55017601-fc6b-40bf-a73b-c51c25a223f7",
             "cn": [
                 {
-                    "type": "Ext.panel.Panel",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "baseCls": "x-panel promotionPanel",
-                        "cls": "",
+                        "baseCls": "x-container promotionalContainer",
+                        "designer|displayName": "promotionalContainer",
+                        "layout": "border",
                         "layout|flex": 3,
-                        "title": "PromotionPanel",
-                        "width": "100%"
+                        "margin": null
                     },
-                    "name": "MyPanel2",
-                    "designerId": "aa506d8c-8e27-4383-9f2e-2380ba42ce24",
+                    "name": "MyContainer1",
+                    "designerId": "9f9d263f-c7cf-4d4e-8c11-aaa73cf47d80",
                     "cn": [
                         {
                             "type": "Ext.container.Container",
@@ -59,97 +57,102 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "container|align": "stretch",
-                                "height": "40%",
-                                "layout": "vbox"
+                                "layout": "border",
+                                "layout|flex": 1,
+                                "layout|margins": null,
+                                "layout|region": "center",
+                                "margin": 50,
+                                "style": [
+                                    "background:red;"
+                                ]
                             },
                             "name": "MyContainer3",
-                            "designerId": "b1320c57-087b-4dfc-b251-91444a9ae66b"
-                        },
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "container|align": "stretch",
-                                "container|pack": "end",
-                                "height": "40%",
-                                "layout": "vbox"
-                            },
-                            "name": "MyContainer2",
-                            "designerId": "0847a908-dab6-4a3a-9cfb-b2dbcd5ef850",
-                            "cn": [
-                                {
-                                    "type": "Ext.panel.Panel",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|flex": 1,
-                                        "title": "Area Promozionale",
-                                        "titleAlign": "center"
-                                    },
-                                    "name": "MyPanel4",
-                                    "designerId": "0e095138-5ec3-442e-88d0-90ca869f6502",
-                                    "cn": [
-                                        {
-                                            "type": "Ext.XTemplate",
-                                            "reference": {
-                                                "name": "tpl",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|displayName": "tpl",
-                                                "implHandler": [
-                                                    "Area promozionale"
-                                                ]
-                                            },
-                                            "name": "tpl",
-                                            "designerId": "720857fc-eaa5-4764-8747-5985fd3fa605"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "container|align": "stretch",
-                                "container|pack": "center",
-                                "layout": "vbox"
-                            },
-                            "name": "MyContainer4",
-                            "designerId": "db8bf5eb-a807-452a-b128-40f1d8813d69"
+                            "designerId": "0483c7e0-28e9-482a-8740-1aa9be79a749"
                         }
                     ]
                 },
                 {
-                    "type": "Ext.panel.Panel",
+                    "type": "Ext.container.Container",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "layout|flex": 2,
-                        "maxWidth": 300,
+                        "baseCls": "x-container loginContainer",
+                        "designer|displayName": "loginContainer",
+                        "layout": "border",
+                        "layout|flex": 1,
                         "minWidth": 300,
-                        "title": "Login",
-                        "width": ""
+                        "width": 300
                     },
-                    "name": "MyPanel3",
-                    "designerId": "7fc079ba-9eac-48e4-81d1-6b1a19a99fc1"
+                    "name": "MyContainer2",
+                    "designerId": "e0fdb0e0-85be-49d1-8a52-029fac491cac",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "header": false,
+                                "layout": "auto",
+                                "layout|flex": 1,
+                                "layout|region": "center",
+                                "margin": "200 0 200 0",
+                                "minWidth": 300,
+                                "title": "My Form"
+                            },
+                            "name": "MyForm",
+                            "designerId": "26b6d3d4-2a07-43cc-a383-2635cfe29593",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Login",
+                                        "labelWidth": 80
+                                    },
+                                    "name": "MyTextField",
+                                    "designerId": "d74e1a42-ad8e-40f1-8b72-a99d479c2ff0"
+                                },
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Password",
+                                        "labelWidth": 80
+                                    },
+                                    "name": "MyTextField1",
+                                    "designerId": "aed1e184-36cc-4530-9518-96fe8589e05a"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Accedi"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "38b041d1-6e5d-403b-adb9-73bb871df327"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
