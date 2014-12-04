@@ -90,6 +90,83 @@
                     "designerId": "e0fdb0e0-85be-49d1-8a52-029fac491cac",
                     "cn": [
                         {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "header": false,
+                                "layout|flex": 1,
+                                "layout|region": "west",
+                                "margin": "200 0 200 0",
+                                "minWidth": 300,
+                                "title": "Login Menu",
+                                "width": 150
+                            },
+                            "name": "MyPanel",
+                            "designerId": "26b6d3d4-2a07-43cc-a383-2635cfe29593",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Menu",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "floating": false,
+                                        "width": "100%"
+                                    },
+                                    "name": "MyMenu",
+                                    "designerId": "f23323d2-ede7-4c74-90ac-1d2c177e9336",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "name": "MyMenuItem",
+                                            "designerId": "33150324-dbbe-4da3-a35a-e12151b4953a"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "name": "MyMenuItem1",
+                                            "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"
+                                        },
+                                        {
+                                            "type": "Ext.menu.Item",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "text": "Menu Item"
+                                            },
+                                            "name": "MyMenuItem2",
+                                            "designerId": "c11d6068-09d5-429e-a844-d44a57ba6ce0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             "type": "Ext.form.Panel",
                             "reference": {
                                 "name": "items",
@@ -104,10 +181,10 @@
                                 "layout|region": "center",
                                 "margin": "200 0 200 0",
                                 "minWidth": 300,
-                                "title": "My Form"
+                                "title": "Login Form"
                             },
-                            "name": "MyForm",
-                            "designerId": "26b6d3d4-2a07-43cc-a383-2635cfe29593",
+                            "name": "MyForm2",
+                            "designerId": "84eb0186-bd9d-4984-ab84-7d2851947760",
                             "cn": [
                                 {
                                     "type": "Ext.form.field.Text",
@@ -121,7 +198,7 @@
                                         "labelWidth": 80
                                     },
                                     "name": "MyTextField",
-                                    "designerId": "d74e1a42-ad8e-40f1-8b72-a99d479c2ff0"
+                                    "designerId": "3a7b6957-efd0-4de6-a6e7-6e62ee21c6ff"
                                 },
                                 {
                                     "type": "Ext.form.field.Text",
@@ -135,7 +212,7 @@
                                         "labelWidth": 80
                                     },
                                     "name": "MyTextField1",
-                                    "designerId": "aed1e184-36cc-4530-9518-96fe8589e05a"
+                                    "designerId": "760e2eb2-06a2-4dcf-9244-4911aca2223e"
                                 },
                                 {
                                     "type": "Ext.button.Button",
@@ -148,7 +225,7 @@
                                         "text": "Accedi"
                                     },
                                     "name": "MyButton",
-                                    "designerId": "38b041d1-6e5d-403b-adb9-73bb871df327"
+                                    "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524"
                                 }
                             ]
                         }

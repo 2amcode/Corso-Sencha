@@ -19,6 +19,8 @@ Ext.define('Domino.view.MyViewport1', {
 
     requires: [
         'Domino.view.MyViewport1ViewModel',
+        'Ext.menu.Menu',
+        'Ext.menu.Item',
         'Ext.form.Panel',
         'Ext.form.field.Text',
         'Ext.button.Button'
@@ -66,6 +68,38 @@ Ext.define('Domino.view.MyViewport1', {
                     layout: 'border',
                     items: [
                         {
+                            xtype: 'panel',
+                            flex: 1,
+                            region: 'west',
+                            margin: '200 0 200 0',
+                            minWidth: 300,
+                            width: 150,
+                            bodyPadding: 10,
+                            header: false,
+                            title: 'Login Menu',
+                            items: [
+                                {
+                                    xtype: 'menu',
+                                    floating: false,
+                                    width: '100%',
+                                    items: [
+                                        {
+                                            xtype: 'menuitem',
+                                            text: 'Menu Item'
+                                        },
+                                        {
+                                            xtype: 'menuitem',
+                                            text: 'Menu Item'
+                                        },
+                                        {
+                                            xtype: 'menuitem',
+                                            text: 'Menu Item'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
                             xtype: 'form',
                             flex: 1,
                             region: 'center',
@@ -74,7 +108,7 @@ Ext.define('Domino.view.MyViewport1', {
                             layout: 'auto',
                             bodyPadding: 10,
                             header: false,
-                            title: 'My Form',
+                            title: 'Login Form',
                             items: [
                                 {
                                     xtype: 'textfield',
