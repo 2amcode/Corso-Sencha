@@ -90,142 +90,61 @@
                     "designerId": "e0fdb0e0-85be-49d1-8a52-029fac491cac",
                     "cn": [
                         {
-                            "type": "Ext.panel.Panel",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "bodyPadding": 10,
-                                "header": false,
+                                "animation": null,
+                                "id": "homeLoginContainer",
+                                "layout": "card",
                                 "layout|flex": 1,
-                                "layout|region": "west",
-                                "margin": "200 0 200 0",
-                                "minWidth": 300,
-                                "title": "Login Menu",
-                                "width": 150
+                                "layout|region": "center"
                             },
-                            "name": "MyPanel",
-                            "designerId": "26b6d3d4-2a07-43cc-a383-2635cfe29593",
-                            "cn": [
+                            "name": "MyContainer4",
+                            "designerId": "8cfa3b54-f086-4bfc-b1f9-89b2d7b71eb6",
+                            "customConfigs": [
                                 {
-                                    "type": "Ext.menu.Menu",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "floating": false,
-                                        "width": "100%"
-                                    },
-                                    "name": "MyMenu",
-                                    "designerId": "f23323d2-ede7-4c74-90ac-1d2c177e9336",
-                                    "cn": [
-                                        {
-                                            "type": "Ext.menu.Item",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "text": "Menu Item"
-                                            },
-                                            "name": "MyMenuItem",
-                                            "designerId": "33150324-dbbe-4da3-a35a-e12151b4953a"
-                                        },
-                                        {
-                                            "type": "Ext.menu.Item",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "text": "Menu Item"
-                                            },
-                                            "name": "MyMenuItem1",
-                                            "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"
-                                        },
-                                        {
-                                            "type": "Ext.menu.Item",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "text": "Menu Item"
-                                            },
-                                            "name": "MyMenuItem2",
-                                            "designerId": "c11d6068-09d5-429e-a844-d44a57ba6ce0"
-                                        }
-                                    ]
+                                    "group": "(Custom Properties)",
+                                    "name": "animation",
+                                    "type": "string"
                                 }
-                            ]
-                        },
-                        {
-                            "type": "Ext.form.Panel",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "bodyPadding": 10,
-                                "header": false,
-                                "layout": "auto",
-                                "layout|flex": 1,
-                                "layout|region": "center",
-                                "margin": "200 0 200 0",
-                                "minWidth": 300,
-                                "title": "Login Form"
-                            },
-                            "name": "MyForm2",
-                            "designerId": "84eb0186-bd9d-4984-ab84-7d2851947760",
+                            ],
                             "cn": [
                                 {
-                                    "type": "Ext.form.field.Text",
+                                    "type": "linkedinstance",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "fieldLabel": "Login",
-                                        "labelWidth": 80
+                                        "id": "homeLoginMenuPanel",
+                                        "itemId": "LoginMenuPanel",
+                                        "manageHeight": true
                                     },
-                                    "name": "MyTextField",
-                                    "designerId": "3a7b6957-efd0-4de6-a6e7-6e62ee21c6ff"
+                                    "name": "loginmenu1",
+                                    "designerId": "86ff9e00-136c-4aa7-8797-6ac48ce02252",
+                                    "masterInstanceId": "95f55b03-61d0-47e7-b8df-ffffeb19653a"
                                 },
                                 {
-                                    "type": "Ext.form.field.Text",
+                                    "type": "linkedinstance",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "fieldLabel": "Password",
-                                        "labelWidth": 80
+                                        "hidden": false,
+                                        "id": "homeLoginFormPanel",
+                                        "itemId": "LoginFormPanel",
+                                        "manageHeight": true
                                     },
-                                    "name": "MyTextField1",
-                                    "designerId": "760e2eb2-06a2-4dcf-9244-4911aca2223e"
-                                },
-                                {
-                                    "type": "Ext.button.Button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "text": "Accedi"
-                                    },
-                                    "name": "MyButton",
-                                    "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524"
+                                    "name": "loginform1",
+                                    "designerId": "0fd3acd6-ee49-4476-9f0b-03b221188ee7",
+                                    "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
                                 }
                             ]
                         }

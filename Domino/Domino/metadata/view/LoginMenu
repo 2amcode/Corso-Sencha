@@ -1,0 +1,100 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "loginmenu",
+        "designer|userClassName": "LoginMenu",
+        "header": false,
+        "margin": "200 0 200 0",
+        "minWidth": 300,
+        "title": "Login Menu",
+        "width": 150
+    },
+    "name": "MyPanel",
+    "designerId": "95f55b03-61d0-47e7-b8df-ffffeb19653a",
+    "viewControllerInstanceId": "a2c980cb-7f31-4d71-9b8f-e79fb84b84b2",
+    "viewModelInstanceId": "f1fbd341-e006-4e4e-b200-531e6df902e2",
+    "cn": [
+        {
+            "type": "Ext.menu.Menu",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "floating": false,
+                "width": "100%"
+            },
+            "name": "MyMenu",
+            "designerId": "f23323d2-ede7-4c74-90ac-1d2c177e9336",
+            "cn": [
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Login"
+                    },
+                    "name": "MyMenuItem",
+                    "designerId": "33150324-dbbe-4da3-a35a-e12151b4953a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMenuitemClick",
+                                "implHandler": [
+                                    "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
+                                    "cntr.setActiveItem(1);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onMenuitemClick",
+                            "designerId": "b6082622-5535-4b15-aff1-dfa7d7df7afc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Login Facebook"
+                    },
+                    "name": "MyMenuItem1",
+                    "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Login Google"
+                    },
+                    "name": "MyMenuItem2",
+                    "designerId": "c11d6068-09d5-429e-a844-d44a57ba6ce0"
+                }
+            ]
+        }
+    ]
+}

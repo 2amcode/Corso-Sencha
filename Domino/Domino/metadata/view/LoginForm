@@ -1,0 +1,101 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "loginform",
+        "designer|userClassName": "LoginForm",
+        "header": false,
+        "layout": "auto",
+        "margin": "200 0 200 0",
+        "minWidth": 300,
+        "title": "Login Form"
+    },
+    "name": "MyForm2",
+    "designerId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd",
+    "viewControllerInstanceId": "085901cd-a7a1-49fa-a914-42ff5a8062d3",
+    "viewModelInstanceId": "72045ac1-ad52-43cf-9379-f98f6218bc4a",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Login",
+                "labelWidth": 80
+            },
+            "name": "MyTextField",
+            "designerId": "3a7b6957-efd0-4de6-a6e7-6e62ee21c6ff"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Password",
+                "labelWidth": 80
+            },
+            "name": "MyTextField1",
+            "designerId": "760e2eb2-06a2-4dcf-9244-4911aca2223e"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Accedi"
+            },
+            "name": "MyButton",
+            "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "alignTarget": null,
+                "iconAlign": "right",
+                "text": "Torna"
+            },
+            "name": "MyButton1",
+            "designerId": "2a8944dc-4304-457a-9778-561c3daf6449",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonClick",
+                        "implHandler": [
+                            "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
+                            "cntr.setActiveItem(0);"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onButtonClick",
+                    "designerId": "cd8016e3-299e-4528-a44a-f985002ff309"
+                }
+            ]
+        }
+    ]
+}

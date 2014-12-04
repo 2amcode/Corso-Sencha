@@ -21,7 +21,9 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyViewport1'
+        'MyViewport1',
+        'LoginForm',
+        'LoginMenu'
     ],
     name: 'Domino',
 
