@@ -16,15 +16,9 @@
         "width": 150
     },
     "name": "MyPanel",
-<<<<<<< HEAD
     "designerId": "95f55b03-61d0-47e7-b8df-ffffeb19653a",
     "viewControllerInstanceId": "a2c980cb-7f31-4d71-9b8f-e79fb84b84b2",
     "viewModelInstanceId": "f1fbd341-e006-4e4e-b200-531e6df902e2",
-=======
-    "designerId": "3453e795-3090-49f0-ab21-984899d4af6d",
-    "viewControllerInstanceId": "b7e83833-3642-4c03-9d83-9df931202bb1",
-    "viewModelInstanceId": "a7b1e74e-ef03-407a-ad0b-715a13705b85",
->>>>>>> origin/master
     "cn": [
         {
             "type": "Ext.menu.Menu",
@@ -48,10 +42,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-<<<<<<< HEAD
-=======
-                        "minHeight": null,
->>>>>>> origin/master
                         "text": "Login"
                     },
                     "name": "MyMenuItem",
@@ -67,28 +57,14 @@
                             "userConfig": {
                                 "fn": "onMenuitemClick",
                                 "implHandler": [
-<<<<<<< HEAD
                                     "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
                                     "cntr.setActiveItem(1);"
-=======
-                                    "",
-                                    "",
-                                    "//faccio scomparire il parent",
-                                    "item.up('#loginContainer').down('#loginFormPanel').show();",
-                                    "//faccio comparire la form di login",
-                                    "item.up('#loginContainer').down('#loginMenuPanel').hide();",
-                                    ""
->>>>>>> origin/master
                                 ],
                                 "name": "click",
                                 "scope": "me"
                             },
                             "name": "onMenuitemClick",
-<<<<<<< HEAD
                             "designerId": "b6082622-5535-4b15-aff1-dfa7d7df7afc"
-=======
-                            "designerId": "58d46862-02be-4a57-b41f-07fd5b0a8ab9"
->>>>>>> origin/master
                         }
                     ]
                 },
@@ -100,11 +76,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-<<<<<<< HEAD
                         "text": "Login Facebook"
-=======
-                        "text": "Login facebook"
->>>>>>> origin/master
                     },
                     "name": "MyMenuItem1",
                     "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"

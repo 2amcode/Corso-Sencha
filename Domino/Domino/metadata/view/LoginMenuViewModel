@@ -9,9 +9,5 @@
         "designer|userAlias": "loginmenu",
         "designer|userClassName": "LoginMenuViewModel"
     },
-<<<<<<< HEAD
     "designerId": "f1fbd341-e006-4e4e-b200-531e6df902e2"
-=======
-    "designerId": "a7b1e74e-ef03-407a-ad0b-715a13705b85"
->>>>>>> origin/master
 }

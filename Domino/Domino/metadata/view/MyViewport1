@@ -81,8 +81,6 @@
                     "userConfig": {
                         "baseCls": "x-container loginContainer",
                         "designer|displayName": "loginContainer",
-                        "id": "homeLoginContainer",
-                        "itemId": "loginContainer",
                         "layout": "border",
                         "layout|flex": 1,
                         "minWidth": 300,
@@ -92,18 +90,13 @@
                     "designerId": "e0fdb0e0-85be-49d1-8a52-029fac491cac",
                     "cn": [
                         {
-<<<<<<< HEAD
                             "type": "Ext.container.Container",
-=======
-                            "type": "linkedinstance",
->>>>>>> origin/master
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-<<<<<<< HEAD
                                 "animation": null,
                                 "id": "homeLoginContainer",
                                 "layout": "card",
@@ -154,32 +147,6 @@
                                     "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
                                 }
                             ]
-=======
-                                "id": "homeLoginMenuPanel",
-                                "itemId": "loginMenuPanel",
-                                "layout|region": "west"
-                            },
-                            "name": "loginmenu",
-                            "designerId": "4766facd-de9d-4fd1-b503-b9e6f98516c5",
-                            "masterInstanceId": "3453e795-3090-49f0-ab21-984899d4af6d"
-                        },
-                        {
-                            "type": "linkedinstance",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "hidden": true,
-                                "id": "homeLoginFormPanel",
-                                "itemId": "loginFormPanel",
-                                "layout|region": "center"
-                            },
-                            "name": "loginform",
-                            "designerId": "65252dfc-71eb-48c9-9d74-7fda60ffd84c",
-                            "masterInstanceId": "0488d66f-a985-4ab1-83cf-170b5460e8ed"
->>>>>>> origin/master
                         }
                     ]
                 }

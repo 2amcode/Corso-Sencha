@@ -61,14 +61,11 @@ Ext.define('Domino.view.MyViewport1', {
                     xtype: 'container',
                     flex: 1,
                     baseCls: 'x-container loginContainer',
-                    id: 'homeLoginContainer',
-                    itemId: 'loginContainer',
                     minWidth: 300,
                     width: 300,
                     layout: 'border',
                     items: [
                         {
-<<<<<<< HEAD
                             xtype: 'container',
                             flex: 1,
                             region: 'center',
@@ -89,19 +86,6 @@ Ext.define('Domino.view.MyViewport1', {
                                     manageHeight: true
                                 }
                             ]
-=======
-                            xtype: 'loginmenu',
-                            region: 'west',
-                            id: 'homeLoginMenuPanel',
-                            itemId: 'loginMenuPanel'
-                        },
-                        {
-                            xtype: 'loginform',
-                            region: 'center',
-                            hidden: true,
-                            id: 'homeLoginFormPanel',
-                            itemId: 'loginFormPanel'
->>>>>>> origin/master
                         }
                     ]
                 }

@@ -9,9 +9,5 @@
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginFormViewController"
     },
-<<<<<<< HEAD
     "designerId": "085901cd-a7a1-49fa-a914-42ff5a8062d3"
-=======
-    "designerId": "7e7faa19-1966-4fa0-af98-a75279257b51"
->>>>>>> origin/master
 }

@@ -10,25 +10,15 @@
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginForm",
         "header": false,
-<<<<<<< HEAD
-=======
-        "itemId": "",
->>>>>>> origin/master
         "layout": "auto",
         "margin": "200 0 200 0",
         "minWidth": 300,
         "title": "Login Form"
     },
     "name": "MyForm2",
-<<<<<<< HEAD
     "designerId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd",
     "viewControllerInstanceId": "085901cd-a7a1-49fa-a914-42ff5a8062d3",
     "viewModelInstanceId": "72045ac1-ad52-43cf-9379-f98f6218bc4a",
-=======
-    "designerId": "0488d66f-a985-4ab1-83cf-170b5460e8ed",
-    "viewControllerInstanceId": "7e7faa19-1966-4fa0-af98-a75279257b51",
-    "viewModelInstanceId": "0878cd70-fa39-4b82-b901-8ba797a4f2e3",
->>>>>>> origin/master
     "cn": [
         {
             "type": "Ext.form.field.Text",
@@ -79,19 +69,12 @@
             },
             "codeClass": null,
             "userConfig": {
-<<<<<<< HEAD
                 "alignTarget": null,
                 "iconAlign": "right",
                 "text": "Torna"
             },
             "name": "MyButton1",
             "designerId": "2a8944dc-4304-457a-9778-561c3daf6449",
-=======
-                "text": "Annulla"
-            },
-            "name": "MyButton1",
-            "designerId": "a3c65863-2f1d-4dda-b07a-0ef5fcdac1a2",
->>>>>>> origin/master
             "cn": [
                 {
                     "type": "viewcontrollereventbinding",
@@ -103,25 +86,14 @@
                     "userConfig": {
                         "fn": "onButtonClick",
                         "implHandler": [
-<<<<<<< HEAD
                             "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
                             "cntr.setActiveItem(0);"
-=======
-                            "//faccio scomparire il parent",
-                            "button.up('#loginContainer').down('#loginFormPanel').hide();",
-                            "//faccio comparire la form di login",
-                            "button.up('#loginContainer').down('#loginMenuPanel').show();"
->>>>>>> origin/master
                         ],
                         "name": "click",
                         "scope": "me"
                     },
                     "name": "onButtonClick",
-<<<<<<< HEAD
                     "designerId": "cd8016e3-299e-4528-a44a-f985002ff309"
-=======
-                    "designerId": "9535ac05-efed-4e1d-8e02-1281797e607c"
->>>>>>> origin/master
                 }
             ]
         }
