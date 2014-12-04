@@ -75,15 +75,12 @@ Ext.define('Domino.view.MyViewport1', {
                                 {
                                     xtype: 'loginmenu',
                                     id: 'homeLoginMenuPanel',
-                                    itemId: 'LoginMenuPanel',
-                                    manageHeight: true
+                                    itemId: 'LoginMenuPanel'
                                 },
                                 {
                                     xtype: 'loginform',
-                                    hidden: false,
                                     id: 'homeLoginFormPanel',
-                                    itemId: 'LoginFormPanel',
-                                    manageHeight: true
+                                    itemId: 'LoginFormPanel'
                                 }
                             ]
                         }

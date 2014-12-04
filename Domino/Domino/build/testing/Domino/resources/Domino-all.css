@@ -8498,6 +8498,11 @@ td.x-frame-mc {
   vertical-align: top;
 }
 
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/layout/container/Fit.scss */
+.x-fit-item {
+  position: relative;
+}
+
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Text.scss */
 .x-form-trigger-wrap {
   display: table;

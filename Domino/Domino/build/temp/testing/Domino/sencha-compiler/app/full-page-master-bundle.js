@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/superandrew/Documents/xcode/Corso-Sencha/Domino/Domino/app.js
+// @require E:\Dati\Svil\Apps\Sencha\Corso-Sencha\Domino\Domino\app.js
