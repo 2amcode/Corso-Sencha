@@ -1,0 +1,102 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "loginform",
+        "designer|userClassName": "LoginForm",
+        "header": false,
+        "itemId": "",
+        "layout": "auto",
+        "margin": "200 0 200 0",
+        "minWidth": 300,
+        "title": "Login Form"
+    },
+    "name": "MyForm2",
+    "designerId": "0488d66f-a985-4ab1-83cf-170b5460e8ed",
+    "viewControllerInstanceId": "7e7faa19-1966-4fa0-af98-a75279257b51",
+    "viewModelInstanceId": "0878cd70-fa39-4b82-b901-8ba797a4f2e3",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Login",
+                "labelWidth": 80
+            },
+            "name": "MyTextField",
+            "designerId": "3a7b6957-efd0-4de6-a6e7-6e62ee21c6ff"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Password",
+                "labelWidth": 80
+            },
+            "name": "MyTextField1",
+            "designerId": "760e2eb2-06a2-4dcf-9244-4911aca2223e"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Accedi"
+            },
+            "name": "MyButton",
+            "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Annulla"
+            },
+            "name": "MyButton1",
+            "designerId": "a3c65863-2f1d-4dda-b07a-0ef5fcdac1a2",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonClick",
+                        "implHandler": [
+                            "//faccio scomparire il parent",
+                            "button.up('#loginContainer').query('#loginFormPanel')[0].hide();",
+                            "//faccio comparire la form di login",
+                            "button.up('#loginContainer').query('#loginMenuPanel')[0].show();"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onButtonClick",
+                    "designerId": "9535ac05-efed-4e1d-8e02-1281797e607c"
+                }
+            ]
+        }
+    ]
+}

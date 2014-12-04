@@ -19,11 +19,9 @@ Ext.define('Domino.view.MyViewport1', {
 
     requires: [
         'Domino.view.MyViewport1ViewModel',
-        'Ext.menu.Menu',
-        'Ext.menu.Item',
-        'Ext.form.Panel',
-        'Ext.form.field.Text',
-        'Ext.button.Button'
+        'Domino.view.LoginMenu',
+        'Domino.view.LoginForm',
+        'Ext.form.Panel'
     ],
 
     viewModel: {
@@ -63,68 +61,24 @@ Ext.define('Domino.view.MyViewport1', {
                     xtype: 'container',
                     flex: 1,
                     baseCls: 'x-container loginContainer',
+                    id: 'homeLoginContainer',
+                    itemId: 'loginContainer',
                     minWidth: 300,
                     width: 300,
                     layout: 'border',
                     items: [
                         {
-                            xtype: 'panel',
-                            flex: 1,
+                            xtype: 'loginmenu',
                             region: 'west',
-                            margin: '200 0 200 0',
-                            minWidth: 300,
-                            width: 150,
-                            bodyPadding: 10,
-                            header: false,
-                            title: 'Login Menu',
-                            items: [
-                                {
-                                    xtype: 'menu',
-                                    floating: false,
-                                    width: '100%',
-                                    items: [
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        },
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        },
-                                        {
-                                            xtype: 'menuitem',
-                                            text: 'Menu Item'
-                                        }
-                                    ]
-                                }
-                            ]
+                            id: 'homeLoginMenuPanel',
+                            itemId: 'loginMenuPanel'
                         },
                         {
-                            xtype: 'form',
-                            flex: 1,
+                            xtype: 'loginform',
                             region: 'center',
-                            margin: '200 0 200 0',
-                            minWidth: 300,
-                            layout: 'auto',
-                            bodyPadding: 10,
-                            header: false,
-                            title: 'Login Form',
-                            items: [
-                                {
-                                    xtype: 'textfield',
-                                    fieldLabel: 'Login',
-                                    labelWidth: 80
-                                },
-                                {
-                                    xtype: 'textfield',
-                                    fieldLabel: 'Password',
-                                    labelWidth: 80
-                                },
-                                {
-                                    xtype: 'button',
-                                    text: 'Accedi'
-                                }
-                            ]
+                            hidden: true,
+                            id: 'homeLoginFormPanel',
+                            itemId: 'loginFormPanel'
                         }
                     ]
                 }

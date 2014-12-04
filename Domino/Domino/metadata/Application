@@ -8,7 +8,9 @@
     "userConfig": {
         "name": "Domino",
         "views": [
-            "MyViewport1"
+            "MyViewport1",
+            "LoginMenu",
+            "LoginForm"
         ]
     },
     "name": "Application",
