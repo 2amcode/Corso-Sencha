@@ -21,9 +21,9 @@ Ext.define('Domino.view.LoginMenuViewController', {
 
 
         //faccio scomparire il parent
-        item.up('#loginContainer').query('#loginFormPanel')[0].show();
+        item.up('#loginContainer').down('#loginFormPanel').show();
         //faccio comparire la form di login
-        item.up('#loginContainer').query('#loginMenuPanel')[0].hide();
+        item.up('#loginContainer').down('#loginMenuPanel').hide();
 
     }
 

@@ -86,9 +86,9 @@
                         "fn": "onButtonClick",
                         "implHandler": [
                             "//faccio scomparire il parent",
-                            "button.up('#loginContainer').query('#loginFormPanel')[0].hide();",
+                            "button.up('#loginContainer').down('#loginFormPanel').hide();",
                             "//faccio comparire la form di login",
-                            "button.up('#loginContainer').query('#loginMenuPanel')[0].show();"
+                            "button.up('#loginContainer').down('#loginMenuPanel').show();"
                         ],
                         "name": "click",
                         "scope": "me"
