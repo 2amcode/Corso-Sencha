@@ -19,147 +19,15 @@
     "viewModelInstanceId": "e3020f76-6bae-41af-9884-db94487c75cc",
     "cn": [
         {
-            "type": "Ext.container.Container",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
-            "userConfig": {
-                "container|align": "stretch",
-                "designer|displayName": "Card 1",
-                "layout": "hbox"
-            },
-            "name": "MyContainer",
-            "designerId": "55017601-fc6b-40bf-a73b-c51c25a223f7",
-            "cn": [
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "baseCls": "x-container promotionalContainer",
-                        "designer|displayName": "promotionalContainer",
-                        "layout": "border",
-                        "layout|flex": 3,
-                        "margin": null
-                    },
-                    "name": "MyContainer1",
-                    "designerId": "9f9d263f-c7cf-4d4e-8c11-aaa73cf47d80",
-                    "cn": [
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout": "border",
-                                "layout|flex": 1,
-                                "layout|margins": null,
-                                "layout|region": "center",
-                                "margin": 50,
-                                "style": [
-                                    "background:red;"
-                                ]
-                            },
-                            "name": "MyContainer3",
-                            "designerId": "0483c7e0-28e9-482a-8740-1aa9be79a749"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.container.Container",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "baseCls": "x-container loginContainer",
-                        "designer|displayName": "loginContainer",
-                        "layout": "border",
-                        "layout|flex": 1,
-                        "minWidth": 300,
-                        "width": 300
-                    },
-                    "name": "MyContainer2",
-                    "designerId": "e0fdb0e0-85be-49d1-8a52-029fac491cac",
-                    "cn": [
-                        {
-                            "type": "Ext.container.Container",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "animation": null,
-                                "id": "homeLoginContainer",
-                                "layout": "card",
-                                "layout|flex": 1,
-                                "layout|region": "center"
-                            },
-                            "name": "MyContainer4",
-                            "designerId": "8cfa3b54-f086-4bfc-b1f9-89b2d7b71eb6",
-                            "customConfigs": [
-                                {
-                                    "group": "(Custom Properties)",
-                                    "name": "animation",
-                                    "type": "string"
-                                }
-                            ],
-                            "cn": [
-                                {
-                                    "type": "linkedinstance",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "id": "homeLoginMenuPanel",
-                                        "itemId": "LoginMenuPanel"
-                                    },
-                                    "name": "loginmenu6",
-                                    "designerId": "86ff9e00-136c-4aa7-8797-6ac48ce02252",
-                                    "masterInstanceId": "95f55b03-61d0-47e7-b8df-ffffeb19653a"
-                                },
-                                {
-                                    "type": "linkedinstance",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "id": "homeLoginFormPanel",
-                                        "itemId": "LoginFormPanel"
-                                    },
-                                    "name": "loginform6",
-                                    "designerId": "0fd3acd6-ee49-4476-9f0b-03b221188ee7",
-                                    "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
-                                },
-                                {
-                                    "type": "linkedinstance",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "name": "myview5",
-                                    "designerId": "5373255b-ffb8-4660-89ea-d8e29483825b",
-                                    "masterInstanceId": "e52cd7ae-0d51-4788-aaf6-a7109c4751b2"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "name": "logincontainer",
+            "designerId": "831193de-fb13-4eab-b546-8bd152b37e6a",
+            "masterInstanceId": "c9898e50-17ef-4f6b-8beb-12b2fc24eedf"
         },
         {
             "type": "linkedinstance",
@@ -168,9 +36,20 @@
                 "type": "array"
             },
             "codeClass": null,
-            "name": "maincontainer1",
-            "designerId": "221f47fc-cbc7-4c8b-9a76-764d34f9086f",
-            "masterInstanceId": "022a6004-17de-42f7-b4b7-8393ef0be561"
+            "name": "homecontainer",
+            "designerId": "f70e2448-e73c-41d0-8e68-d5154117b545",
+            "masterInstanceId": "87eb3161-64e3-4894-bfd8-88d1bdecde2b"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "browsecontainer",
+            "designerId": "6c013186-e907-4561-8bed-1312cae43138",
+            "masterInstanceId": "7586f4d2-bc77-47f0-bb3c-e88b0328fbd9"
         }
     ]
 }

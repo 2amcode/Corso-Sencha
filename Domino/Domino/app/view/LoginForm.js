@@ -48,17 +48,21 @@ Ext.define('Domino.view.LoginForm', {
         },
         {
             xtype: 'button',
+            id: 'loginCmd',
+            itemId: 'loginCmd',
             text: 'Accedi',
             listeners: {
-                click: 'onButtonClick1'
+                click: 'onLoginCmdClick'
             }
         },
         {
             xtype: 'button',
+            id: 'cancelLoginCmd',
+            itemId: 'cancelLoginCmd',
             iconAlign: 'right',
             text: 'Torna',
             listeners: {
-                click: 'onButtonClick'
+                click: 'onCancelLoginCmdClick'
             }
         }
     ]

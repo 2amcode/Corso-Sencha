@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "loginmenu",
-        "designer|userClassName": "LoginMenuViewController"
+        "designer|userAlias": "loginpanel",
+        "designer|userClassName": "LoginPanelViewController"
     },
     "designerId": "a2c980cb-7f31-4d71-9b8f-e79fb84b84b2"
 }

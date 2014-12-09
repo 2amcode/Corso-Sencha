@@ -23,9 +23,11 @@ Ext.application({
     views: [
         'MainViewport',
         'LoginForm',
-        'LoginMenu',
+        'LoginPanel',
         'MyView',
-        'MainContainer'
+        'HomeContainer',
+        'BrowseContainer',
+        'LoginContainer'
     ],
     name: 'Domino',
 

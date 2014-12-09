@@ -7,8 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "bodyPadding": 10,
-        "designer|userAlias": "loginmenu",
-        "designer|userClassName": "LoginMenu",
+        "designer|userAlias": "loginpanel",
+        "designer|userClassName": "LoginPanel",
         "header": false,
         "margin": "200 0 200 0",
         "minWidth": 300,
@@ -29,6 +29,8 @@
             "codeClass": null,
             "userConfig": {
                 "floating": false,
+                "id": "loginMenu",
+                "itemId": "loginMenu",
                 "width": "100%"
             },
             "name": "MyMenu",
@@ -60,8 +62,7 @@
                             "userConfig": {
                                 "fn": "onMenuitemClick",
                                 "implHandler": [
-                                    "debugger;",
-                                    "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
+                                    "var cntr = Ext.ComponentQuery.query(\"#loginPagesContainer\")[0];",
                                     "cntr.setActiveItem(1);"
                                 ],
                                 "name": "click",
@@ -80,7 +81,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "text": "{title}"
+                        "text": "Login via Twitter"
                     },
                     "name": "MyMenuItem1",
                     "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"
@@ -93,7 +94,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "text": "Login Google"
+                        "text": "Login via Google"
                     },
                     "name": "MyMenuItem2",
                     "designerId": "c11d6068-09d5-429e-a844-d44a57ba6ce0"

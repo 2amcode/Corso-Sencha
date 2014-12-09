@@ -19,12 +19,10 @@ Ext.define('Domino.view.MainViewport', {
 
     requires: [
         'Domino.view.MainViewportViewModel',
-        'Domino.view.LoginMenu',
-        'Domino.view.LoginForm',
-        'Domino.view.MyView',
-        'Domino.view.MainContainer',
-        'Ext.form.Panel',
-        'Ext.view.View'
+        'Domino.view.LoginContainer',
+        'Domino.view.HomeContainer',
+        'Domino.view.BrowseContainer',
+        'Ext.container.Container'
     ],
 
     viewModel: {
@@ -36,64 +34,13 @@ Ext.define('Domino.view.MainViewport', {
 
     items: [
         {
-            xtype: 'container',
-            layout: {
-                type: 'hbox',
-                align: 'stretch'
-            },
-            items: [
-                {
-                    xtype: 'container',
-                    flex: 3,
-                    baseCls: 'x-container promotionalContainer',
-                    layout: 'border',
-                    items: [
-                        {
-                            xtype: 'container',
-                            flex: 1,
-                            region: 'center',
-                            margin: 50,
-                            style: 'background:red;',
-                            layout: 'border'
-                        }
-                    ]
-                },
-                {
-                    xtype: 'container',
-                    flex: 1,
-                    baseCls: 'x-container loginContainer',
-                    minWidth: 300,
-                    width: 300,
-                    layout: 'border',
-                    items: [
-                        {
-                            xtype: 'container',
-                            flex: 1,
-                            region: 'center',
-                            id: 'homeLoginContainer',
-                            layout: 'card',
-                            items: [
-                                {
-                                    xtype: 'loginmenu',
-                                    id: 'homeLoginMenuPanel',
-                                    itemId: 'LoginMenuPanel'
-                                },
-                                {
-                                    xtype: 'loginform',
-                                    id: 'homeLoginFormPanel',
-                                    itemId: 'LoginFormPanel'
-                                },
-                                {
-                                    xtype: 'myview'
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            xtype: 'logincontainer'
         },
         {
-            xtype: 'mainContainer'
+            xtype: 'homecontainer'
+        },
+        {
+            xtype: 'browsecontainer'
         }
     ]
 

@@ -1,0 +1,18 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "browsecontainer",
+        "designer|userClassName": "BrowseContainer",
+        "id": "browseContainer",
+        "itemId": "browseContainer"
+    },
+    "name": "MyContainer6",
+    "designerId": "7586f4d2-bc77-47f0-bb3c-e88b0328fbd9",
+    "viewControllerInstanceId": "8ef39671-6bb9-40b8-a8f1-a8d1313acf0b",
+    "viewModelInstanceId": "34c2435b-f03e-48d6-b7d5-cca5f2cf2994"
+}

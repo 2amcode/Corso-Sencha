@@ -56,6 +56,8 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "loginCmd",
+                "itemId": "loginCmd",
                 "text": "Accedi"
             },
             "name": "MyButton",
@@ -69,16 +71,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "onButtonClick1",
+                        "fn": "onLoginCmdClick",
                         "implHandler": [
-                            "",
-                            "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(1);"
+                            "var cntr = Ext.ComponentQuery.query(\"#mainViewport\")[0];",
+                            "cntr.setActiveItem(1);"
                         ],
                         "name": "click",
                         "scope": "me"
                     },
-                    "name": "onButtonClick1",
-                    "designerId": "ee8d2d66-a989-4504-af03-c9ea5619e846"
+                    "name": "onLoginCmdClick",
+                    "designerId": "08b3c40c-d898-4694-a866-3a12a07288a1"
                 }
             ]
         },
@@ -91,7 +93,10 @@
             "codeClass": null,
             "userConfig": {
                 "alignTarget": null,
+                "dock": null,
                 "iconAlign": "right",
+                "id": "cancelLoginCmd",
+                "itemId": "cancelLoginCmd",
                 "text": "Torna"
             },
             "name": "MyButton1",
@@ -105,16 +110,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "onButtonClick",
+                        "fn": "onCancelLoginCmdClick",
                         "implHandler": [
-                            "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
+                            "var cntr = Ext.ComponentQuery.query(\"#loginPagesContainer\")[0];",
                             "cntr.setActiveItem(0);"
                         ],
                         "name": "click",
                         "scope": "me"
                     },
-                    "name": "onButtonClick",
-                    "designerId": "cd8016e3-299e-4528-a44a-f985002ff309"
+                    "name": "onCancelLoginCmdClick",
+                    "designerId": "6d6bd344-2566-4063-9a8a-c28842333d96"
                 }
             ]
         }

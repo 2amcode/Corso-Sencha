@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "browsecontainer",
+        "designer|userClassName": "BrowseContainerViewController"
+    },
+    "designerId": "8ef39671-6bb9-40b8-a8f1-a8d1313acf0b"
+}

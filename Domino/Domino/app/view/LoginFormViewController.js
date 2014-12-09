@@ -17,13 +17,13 @@ Ext.define('Domino.view.LoginFormViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.loginform',
 
-    onButtonClick1: function(button, e, eOpts) {
-
-        Ext.ComponentQuery.query("#mainViewport")[0].setActiveItem(1);
+    onLoginCmdClick: function(button, e, eOpts) {
+        var cntr = Ext.ComponentQuery.query("#mainViewport")[0];
+        cntr.setActiveItem(1);
     },
 
-    onButtonClick: function(button, e, eOpts) {
-        var cntr = Ext.ComponentQuery.query("#homeLoginContainer")[0];
+    onCancelLoginCmdClick: function(button, e, eOpts) {
+        var cntr = Ext.ComponentQuery.query("#loginPagesContainer")[0];
         cntr.setActiveItem(0);
     }
 

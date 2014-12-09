@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "logincontainer",
+        "designer|userClassName": "LoginContainerViewModel"
+    },
+    "designerId": "83ab9198-d37d-4dea-ba5c-80a892d20592"
+}

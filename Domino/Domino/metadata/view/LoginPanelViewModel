@@ -19,8 +19,8 @@
             "    }",
             "  ]"
         ],
-        "designer|userAlias": "loginmenu",
-        "designer|userClassName": "LoginMenuViewModel"
+        "designer|userAlias": "loginpanel",
+        "designer|userClassName": "LoginPanelViewModel"
     },
     "designerId": "f1fbd341-e006-4e4e-b200-531e6df902e2"
 }
