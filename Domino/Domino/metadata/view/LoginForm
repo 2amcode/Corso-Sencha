@@ -59,7 +59,28 @@
                 "text": "Accedi"
             },
             "name": "MyButton",
-            "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524"
+            "designerId": "a9f5e34c-4180-4ee6-a1c5-658f4f1ef524",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onButtonClick1",
+                        "implHandler": [
+                            "",
+                            "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(1);"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onButtonClick1",
+                    "designerId": "ee8d2d66-a989-4504-af03-c9ea5619e846"
+                }
+            ]
         },
         {
             "type": "Ext.button.Button",

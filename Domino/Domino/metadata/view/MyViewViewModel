@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "data": [
-            " [",
+            "{ \"items\" : [",
             "    {",
             "      \"title\" : \"Login\"",
             "    },",
@@ -16,11 +16,14 @@
             "    },",
             "    {",
             "      \"title\" : \"Login via Google\"",
+            "    },",
+            "    {",
+            "      \"title\" : \"Login via Google\"",
             "    }",
-            "  ]"
+            "  ]}"
         ],
-        "designer|userAlias": "loginmenu",
-        "designer|userClassName": "LoginMenuViewModel"
+        "designer|userAlias": "myview",
+        "designer|userClassName": "MyViewViewModel"
     },
-    "designerId": "f1fbd341-e006-4e4e-b200-531e6df902e2"
+    "designerId": "d0a32082-ca8a-493b-accc-57a986abc0aa"
 }

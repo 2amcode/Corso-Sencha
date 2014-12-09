@@ -21,7 +21,8 @@ Ext.define('Domino.view.LoginMenu', {
         'Domino.view.LoginMenuViewModel',
         'Domino.view.LoginMenuViewController',
         'Ext.menu.Menu',
-        'Ext.menu.Item'
+        'Ext.menu.Item',
+        'Ext.XTemplate'
     ],
 
     controller: 'loginmenu',
@@ -39,6 +40,9 @@ Ext.define('Domino.view.LoginMenu', {
         {
             xtype: 'menu',
             floating: false,
+            tpl: [
+                'Link:<a>{title}<a>'
+            ],
             width: '100%',
             items: [
                 {
@@ -50,13 +54,16 @@ Ext.define('Domino.view.LoginMenu', {
                 },
                 {
                     xtype: 'menuitem',
-                    text: 'Login Facebook'
+                    text: '{title}'
                 },
                 {
                     xtype: 'menuitem',
                     text: 'Login Google'
                 }
-            ]
+            ],
+            listeners: {
+                activate: 'onMenuActivate'
+            }
         }
     ]
 

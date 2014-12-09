@@ -48,7 +48,10 @@ Ext.define('Domino.view.LoginForm', {
         },
         {
             xtype: 'button',
-            text: 'Accedi'
+            text: 'Accedi',
+            listeners: {
+                click: 'onButtonClick1'
+            }
         },
         {
             xtype: 'button',

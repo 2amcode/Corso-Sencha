@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "myviewport1",
-        "designer|userClassName": "MyViewport1ViewModel"
+        "designer|userAlias": "mainviewport",
+        "designer|userClassName": "MainViewportViewModel"
     },
     "designerId": "e3020f76-6bae-41af-9884-db94487c75cc"
 }

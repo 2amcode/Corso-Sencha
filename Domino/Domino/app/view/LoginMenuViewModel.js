@@ -15,6 +15,18 @@
 
 Ext.define('Domino.view.LoginMenuViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.loginmenu'
+    alias: 'viewmodel.loginmenu',
+
+    data: [
+        {
+            title: 'Login'
+        },
+        {
+            title: 'Login via facebook'
+        },
+        {
+            title: 'Login via Google'
+        }
+    ]
 
 });

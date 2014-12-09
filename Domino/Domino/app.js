@@ -21,14 +21,16 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyViewport1',
+        'MainViewport',
         'LoginForm',
-        'LoginMenu'
+        'LoginMenu',
+        'MyView',
+        'MainContainer'
     ],
     name: 'Domino',
 
     launch: function() {
-        Ext.create('Domino.view.MyViewport1');
+        Ext.create('Domino.view.MainViewport');
     }
 
 });

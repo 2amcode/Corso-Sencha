@@ -32,6 +32,9 @@
                 "width": "100%"
             },
             "name": "MyMenu",
+            "configAlternates": {
+                "items": "object"
+            },
             "designerId": "f23323d2-ede7-4c74-90ac-1d2c177e9336",
             "cn": [
                 {
@@ -57,6 +60,7 @@
                             "userConfig": {
                                 "fn": "onMenuitemClick",
                                 "implHandler": [
+                                    "debugger;",
                                     "var cntr = Ext.ComponentQuery.query(\"#homeLoginContainer\")[0];",
                                     "cntr.setActiveItem(1);"
                                 ],
@@ -76,7 +80,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "text": "Login Facebook"
+                        "text": "{title}"
                     },
                     "name": "MyMenuItem1",
                     "designerId": "59aff7b0-8355-404d-907b-e14db75f9a35"
@@ -93,6 +97,37 @@
                     },
                     "name": "MyMenuItem2",
                     "designerId": "c11d6068-09d5-429e-a844-d44a57ba6ce0"
+                },
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tpl",
+                        "implHandler": [
+                            "Link:<a>{title}<a>"
+                        ]
+                    },
+                    "name": "tpl",
+                    "designerId": "84ab9add-3e81-441a-9f09-342a41da7c19"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMenuActivate",
+                        "name": "activate",
+                        "scope": "me"
+                    },
+                    "name": "onMenuActivate",
+                    "designerId": "1a112cff-aabe-441b-b1c7-5eee6e089ec3"
                 }
             ]
         }

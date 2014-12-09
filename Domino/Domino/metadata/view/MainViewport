@@ -6,11 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|align": "stretch",
         "designer|initialView": true,
-        "designer|userAlias": "myviewport1",
-        "designer|userClassName": "MyViewport1",
-        "layout": "vbox"
+        "designer|userAlias": "MainViewport",
+        "designer|userClassName": "MainViewport",
+        "id": "loginViewport",
+        "itemId": "mainViewport",
+        "layout": "card"
     },
     "name": "MyViewport1",
     "designerId": "126613e1-839a-4e9b-83e9-9477aed831e7",
@@ -26,8 +27,8 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "stretch",
-                "layout": "hbox",
-                "layout|flex": 1
+                "designer|displayName": "Card 1",
+                "layout": "hbox"
             },
             "name": "MyContainer",
             "designerId": "55017601-fc6b-40bf-a73b-c51c25a223f7",
@@ -122,10 +123,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "id": "homeLoginMenuPanel",
-                                        "itemId": "LoginMenuPanel",
-                                        "manageHeight": true
+                                        "itemId": "LoginMenuPanel"
                                     },
-                                    "name": "loginmenu1",
+                                    "name": "loginmenu6",
                                     "designerId": "86ff9e00-136c-4aa7-8797-6ac48ce02252",
                                     "masterInstanceId": "95f55b03-61d0-47e7-b8df-ffffeb19653a"
                                 },
@@ -137,20 +137,40 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "hidden": false,
                                         "id": "homeLoginFormPanel",
-                                        "itemId": "LoginFormPanel",
-                                        "manageHeight": true
+                                        "itemId": "LoginFormPanel"
                                     },
-                                    "name": "loginform1",
+                                    "name": "loginform6",
                                     "designerId": "0fd3acd6-ee49-4476-9f0b-03b221188ee7",
                                     "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
+                                },
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "myview5",
+                                    "designerId": "5373255b-ffb8-4660-89ea-d8e29483825b",
+                                    "masterInstanceId": "e52cd7ae-0d51-4788-aaf6-a7109c4751b2"
                                 }
                             ]
                         }
                     ]
                 }
             ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "maincontainer1",
+            "designerId": "221f47fc-cbc7-4c8b-9a76-764d34f9086f",
+            "masterInstanceId": "022a6004-17de-42f7-b4b7-8393ef0be561"
         }
     ]
 }

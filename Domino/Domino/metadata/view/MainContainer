@@ -1,0 +1,36 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mainContainer",
+        "designer|userClassName": "MainContainer",
+        "height": "100%",
+        "id": "mainViewport",
+        "itemId": "mainContainer",
+        "width": "100%"
+    },
+    "designerId": "022a6004-17de-42f7-b4b7-8393ef0be561",
+    "viewControllerInstanceId": "1e2ec427-3ca0-4e2a-b0d7-cde48a663d63",
+    "viewModelInstanceId": "7908d829-aff0-4244-b3cf-2c5b0a9ed682",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "manageHeight": false,
+                "title": "My Panel"
+            },
+            "name": "MyPanel",
+            "designerId": "7ee1fd50-928b-47f9-b759-7b76ffe9fe57"
+        }
+    ]
+}

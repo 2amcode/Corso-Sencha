@@ -1,0 +1,37 @@
+{
+    "type": "Ext.view.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "myview",
+        "designer|userClassName": "MyView",
+        "height": 250,
+        "itemSelector": "div.menuItem",
+        "width": 400
+    },
+    "name": "MyView",
+    "designerId": "e52cd7ae-0d51-4788-aaf6-a7109c4751b2",
+    "viewControllerInstanceId": "74326f49-7f55-44f0-b99e-6a1fff6df345",
+    "viewModelInstanceId": "d0a32082-ca8a-493b-accc-57a986abc0aa",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"menuItem\">link<a>link</a>Voce di menu {title}</div>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "8e7d1a90-ea73-40c3-a488-8a1df43ed3b3"
+        }
+    ]
+}
