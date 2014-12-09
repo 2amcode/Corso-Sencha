@@ -1,0 +1,143 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "animCollapse": true,
+        "container|align": "stretch",
+        "designer|userAlias": "browsepanel",
+        "designer|userClassName": "BrowsePanel",
+        "header": false,
+        "id": "browsePanel",
+        "itemId": "browsePanel",
+        "layout": "hbox",
+        "title": "Sfoglia"
+    },
+    "name": "MyPanel4",
+    "designerId": "79e71e66-0adb-4319-bff4-965ed04ff71e",
+    "viewControllerInstanceId": "80d10f57-15d6-47a0-b8bf-911dfe86f255",
+    "viewModelInstanceId": "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e",
+    "cn": [
+        {
+            "type": "Ext.tree.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": [
+                    "background:#1BA1E2;"
+                ],
+                "id": "browseTree",
+                "itemId": "browseTree",
+                "layout|flex": 1,
+                "title": "Sfoglia..."
+            },
+            "name": "MyTreePanel",
+            "designerId": "769b7ae4-8718-48ed-a9f4-4934370c16d1",
+            "cn": [
+                {
+                    "type": "Ext.tree.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTreeView",
+                    "designerId": "11530a1e-6016-4d16-8b98-834e4d2d4719"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": [
+                    "background:#D1ECF9;"
+                ],
+                "id": "browseDetail",
+                "itemId": "browseDetail",
+                "layout|flex": 5,
+                "title": "Iscritti 2"
+            },
+            "name": "MyGridPanel",
+            "designerId": "430dbaa6-aeb3-408b-ba9b-db08d782bcf4",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "String"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "7a37facb-5975-4fd4-8d33-3ba55f8a25a1"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "number",
+                        "text": "Number"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "410cbaa2-61bd-46f7-bbe8-7f704aef37b7"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "Date"
+                    },
+                    "name": "MyDateColumn",
+                    "designerId": "7ac69b18-aab9-459c-8323-04499b6cc388"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bool",
+                        "text": "Boolean"
+                    },
+                    "name": "MyBooleanColumn",
+                    "designerId": "a30af4a9-b1ad-42cd-95cc-631cc7902d00"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "7e32fcd6-1a30-4740-a0d1-cc3c9d1c44b2"
+                }
+            ]
+        }
+    ]
+}

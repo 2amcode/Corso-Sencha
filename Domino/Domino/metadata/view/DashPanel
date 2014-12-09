@@ -1,0 +1,67 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyStyle": [
+            "background:#D1ECF9;"
+        ],
+        "designer|snapToGrid": 10,
+        "designer|userAlias": "dashpanel",
+        "designer|userClassName": "DashPanel",
+        "header": false,
+        "id": "dashPanel",
+        "itemId": "dashPanel",
+        "layout": "absolute",
+        "title": "Dashboard"
+    },
+    "name": "MyPanel3",
+    "designerId": "55a8da6a-e8ba-4076-8ae5-4a3490457936",
+    "viewControllerInstanceId": "3ce69310-286a-47bb-b9cf-c3ce3291bb0f",
+    "viewModelInstanceId": "114d41fd-1e2a-4d44-8eba-590c83611c9d",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": [
+                    "background:#75D175;"
+                ],
+                "header": false,
+                "height": 140,
+                "id": "helpPanel",
+                "itemId": "helpPanel",
+                "layout|x": 20,
+                "layout|y": 20,
+                "style": null,
+                "title": "My Panel",
+                "width": 240
+            },
+            "name": "MyPanel1",
+            "designerId": "072b4497-3eb3-4b32-a4ef-a9865eff8cdc",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": "x-component textNormal",
+                        "text": "Presentazione, guida e novità"
+                    },
+                    "name": "MyLabel2",
+                    "designerId": "9fc42321-86c4-4a09-8c85-1f72e4119a9e"
+                }
+            ]
+        }
+    ]
+}

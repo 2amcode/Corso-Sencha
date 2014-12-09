@@ -19,9 +19,8 @@ Ext.define('Domino.view.MainViewport', {
 
     requires: [
         'Domino.view.MainViewportViewModel',
-        'Domino.view.LoginContainer',
-        'Domino.view.HomeContainer',
-        'Domino.view.BrowseContainer',
+        'Domino.view.LoginPage',
+        'Domino.view.HomePage',
         'Ext.container.Container'
     ],
 
@@ -34,13 +33,10 @@ Ext.define('Domino.view.MainViewport', {
 
     items: [
         {
-            xtype: 'logincontainer'
+            xtype: 'loginpage'
         },
         {
-            xtype: 'homecontainer'
-        },
-        {
-            xtype: 'browsecontainer'
+            xtype: 'homepage'
         }
     ]
 

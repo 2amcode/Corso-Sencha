@@ -11,9 +11,9 @@
         "designer|userClassName": "LoginPanel",
         "header": false,
         "margin": "200 0 200 0",
-        "minWidth": 300,
+        "minWidth": null,
         "title": "Login Menu",
-        "width": 150
+        "width": ""
     },
     "name": "MyPanel",
     "designerId": "95f55b03-61d0-47e7-b8df-ffffeb19653a",

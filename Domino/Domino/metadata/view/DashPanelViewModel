@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "dashpanel",
+        "designer|userClassName": "DashPanelViewModel"
+    },
+    "designerId": "114d41fd-1e2a-4d44-8eba-590c83611c9d"
+}

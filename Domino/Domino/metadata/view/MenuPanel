@@ -1,0 +1,200 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyStyle": [
+            "background:#75C6EE;"
+        ],
+        "designer|userAlias": "menupanel",
+        "designer|userClassName": "MenuPanel",
+        "header": false,
+        "id": "menuPanel",
+        "itemId": "menuPanel",
+        "title": "menuPanel",
+        "width": 150
+    },
+    "name": "MyPanel1",
+    "designerId": "53058cca-b155-4191-8d60-edd7e7260482",
+    "viewControllerInstanceId": "7bdaa9ac-8b05-4bf7-9f44-2738809ea1fc",
+    "viewModelInstanceId": "6134e8db-8213-4c7a-b946-44650f0be941",
+    "cn": [
+        {
+            "type": "Ext.menu.Menu",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "floating": false,
+                "id": "mainMenu",
+                "itemId": "mainMenu",
+                "title": null,
+                "width": 120
+            },
+            "name": "MyMenu1",
+            "designerId": "bf7c0ce4-bb85-4284-a252-af80f1ba9035",
+            "cn": [
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "dashMenuItem",
+                        "style": "background:#1BA1E2;",
+                        "text": "Dashboard"
+                    },
+                    "name": "MyMenuItem3",
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "8a241e81-7a6e-45f5-9d73-4d52acf25c99",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDashMenuItemClick",
+                                "implHandler": [
+                                    "var cntr = Ext.ComponentQuery.query(\"#contentPanel\")[0];",
+                                    "cntr.setActiveItem(0);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onDashMenuItemClick",
+                            "designerId": "e7398e7d-447d-4145-97ff-378036866dff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.menu.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "topSeparator",
+                        "style": null
+                    },
+                    "name": "MySeparator",
+                    "designerId": "475966f3-7089-43ca-b8fd-f449a5271d7b"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "notificationsMenuItem",
+                        "style": "background:#1BA1E2;",
+                        "text": "Notifiche"
+                    },
+                    "name": "MyMenuItem4",
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "c4dae8de-ee07-4709-bc52-bcf8535ece4d"
+                },
+                {
+                    "type": "Ext.menu.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "middleSeparator"
+                    },
+                    "name": "MySeparator1",
+                    "designerId": "23f35323-5ee6-4a28-ada4-859e8b9701a8"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "browseMenuItem",
+                        "style": "background:#1BA1E2;",
+                        "text": "Sfoglia"
+                    },
+                    "name": "MyMenuItem5",
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "d2b1ae3b-c753-4298-9bcb-a29b7b2acae8",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBrowseMenuItemClick",
+                                "implHandler": [
+                                    "var cntr = Ext.ComponentQuery.query(\"#contentPanel\")[0];",
+                                    "cntr.setActiveItem(1);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onBrowseMenuItemClick",
+                            "designerId": "9c15ca81-7f76-4cf5-86cc-7897b6653379"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.menu.Separator",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "bottomSeparator"
+                    },
+                    "name": "MySeparator2",
+                    "designerId": "ca1a0276-4265-4fdc-9d58-09e4fd10042b"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "settingsMenuItem",
+                        "style": "background:#1BA1E2;",
+                        "text": "Acquista e configura"
+                    },
+                    "name": "MyMenuItem6",
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "814d5d1e-acc3-4ff8-8ff5-9694fc9b9bd3"
+                }
+            ]
+        }
+    ]
+}

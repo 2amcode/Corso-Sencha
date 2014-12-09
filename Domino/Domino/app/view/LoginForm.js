@@ -29,7 +29,6 @@ Ext.define('Domino.view.LoginForm', {
         type: 'loginform'
     },
     margin: '200 0 200 0',
-    minWidth: 300,
     layout: 'auto',
     bodyPadding: 10,
     header: false,
@@ -39,12 +38,12 @@ Ext.define('Domino.view.LoginForm', {
         {
             xtype: 'textfield',
             fieldLabel: 'Login',
-            labelWidth: 80
+            labelWidth: 60
         },
         {
             xtype: 'textfield',
             fieldLabel: 'Password',
-            labelWidth: 80
+            labelWidth: 60
         },
         {
             xtype: 'button',

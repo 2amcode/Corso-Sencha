@@ -1,0 +1,48 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "contentpanel",
+        "designer|userClassName": "ContentPanel",
+        "header": false,
+        "id": "contentPanel",
+        "itemId": "contentPanel",
+        "layout": "card",
+        "title": "contentPanel"
+    },
+    "name": "MyPanel2",
+    "designerId": "ff479e67-d14e-478e-8424-b5323f61b24a",
+    "viewControllerInstanceId": "25b4abf8-dcb8-48e1-bd64-91d882c76770",
+    "viewModelInstanceId": "065d9eab-2093-4436-a8e0-d384d0608ba2",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "animCollapse": true
+            },
+            "name": "dashpanel",
+            "designerId": "f590052d-003b-47a3-aeab-4d0ca6f1345f",
+            "masterInstanceId": "55a8da6a-e8ba-4076-8ae5-4a3490457936"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "browsepanel",
+            "designerId": "0a2b802a-d7dd-406c-8365-310c04997c0b",
+            "masterInstanceId": "79e71e66-0adb-4319-bff4-965ed04ff71e"
+        }
+    ]
+}

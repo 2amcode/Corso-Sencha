@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "menupanel",
+        "designer|userClassName": "MenuPanelViewController"
+    },
+    "designerId": "7bdaa9ac-8b05-4bf7-9f44-2738809ea1fc"
+}

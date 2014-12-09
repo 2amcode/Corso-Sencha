@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "dashpanel",
+        "designer|userClassName": "DashPanelViewController"
+    },
+    "designerId": "3ce69310-286a-47bb-b9cf-c3ce3291bb0f"
+}

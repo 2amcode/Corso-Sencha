@@ -30,8 +30,7 @@ Ext.define('Domino.view.LoginPanel', {
         type: 'loginpanel'
     },
     margin: '200 0 200 0',
-    minWidth: 300,
-    width: 150,
+    width: '',
     bodyPadding: 10,
     header: false,
     title: 'Login Menu',

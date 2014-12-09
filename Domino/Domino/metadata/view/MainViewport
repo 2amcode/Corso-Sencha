@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|deferredRender": null,
         "designer|initialView": true,
         "designer|userAlias": "MainViewport",
         "designer|userClassName": "MainViewport",
@@ -25,7 +26,7 @@
                 "type": "array"
             },
             "codeClass": null,
-            "name": "logincontainer",
+            "name": "loginpage",
             "designerId": "831193de-fb13-4eab-b546-8bd152b37e6a",
             "masterInstanceId": "c9898e50-17ef-4f6b-8beb-12b2fc24eedf"
         },
@@ -36,20 +37,9 @@
                 "type": "array"
             },
             "codeClass": null,
-            "name": "homecontainer",
+            "name": "homepage",
             "designerId": "f70e2448-e73c-41d0-8e68-d5154117b545",
             "masterInstanceId": "87eb3161-64e3-4894-bfd8-88d1bdecde2b"
-        },
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "name": "browsecontainer",
-            "designerId": "6c013186-e907-4561-8bed-1312cae43138",
-            "masterInstanceId": "7586f4d2-bc77-47f0-bb3c-e88b0328fbd9"
         }
     ]
 }

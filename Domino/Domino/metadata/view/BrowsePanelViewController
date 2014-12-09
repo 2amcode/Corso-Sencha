@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "browsepanel",
+        "designer|userClassName": "BrowsePanelViewController"
+    },
+    "designerId": "80d10f57-15d6-47a0-b8bf-911dfe86f255"
+}

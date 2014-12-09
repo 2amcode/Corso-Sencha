@@ -12,7 +12,7 @@
         "header": false,
         "layout": "auto",
         "margin": "200 0 200 0",
-        "minWidth": 300,
+        "minWidth": null,
         "title": "Login Form"
     },
     "name": "MyForm2",
@@ -29,7 +29,7 @@
             "codeClass": null,
             "userConfig": {
                 "fieldLabel": "Login",
-                "labelWidth": 80
+                "labelWidth": 60
             },
             "name": "MyTextField",
             "designerId": "3a7b6957-efd0-4de6-a6e7-6e62ee21c6ff"
@@ -43,7 +43,7 @@
             "codeClass": null,
             "userConfig": {
                 "fieldLabel": "Password",
-                "labelWidth": 80
+                "labelWidth": 60
             },
             "name": "MyTextField1",
             "designerId": "760e2eb2-06a2-4dcf-9244-4911aca2223e"
