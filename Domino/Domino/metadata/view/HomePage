@@ -8,15 +8,11 @@
     "userConfig": {
         "designer|userAlias": "homepage",
         "designer|userClassName": "HomePage",
-        "height": null,
+        "height": "100%",
         "id": "homePage",
         "itemId": "homePage",
         "layout": "border",
-        "maxHeight": null,
-        "maxWidth": null,
-        "minHeight": null,
-        "minWidth": null,
-        "width": null
+        "width": "100%"
     },
     "name": "MyContainer5",
     "designerId": "87eb3161-64e3-4894-bfd8-88d1bdecde2b",
@@ -90,108 +86,60 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "container|align": "stretch",
-                        "dock": null,
                         "id": "userContainer",
                         "itemId": "userContainer",
-                        "layout": "vbox",
-                        "layout|flex": 1,
-                        "layout|margins": null,
-                        "margin": null,
-                        "padding": "20 0 0 0 ",
-                        "width": "100%"
+                        "layout|flex": 1
                     },
                     "name": "MyContainer8",
                     "designerId": "d0cf79a2-368d-41aa-8087-2d1b8cb69933",
                     "cn": [
                         {
-                            "type": "Ext.container.Container",
+                            "type": "Ext.form.Label",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "style": [
-                                    "text-align:center;",
-                                    ""
-                                ],
-                                "width": 150
+                                "id": "userNameSpan",
+                                "itemId": "userNameSpan",
+                                "text": "Michele Rubin"
                             },
-                            "name": "MyContainer6",
-                            "designerId": "186d7814-4403-4ca2-b24c-d456b1f5c5e8",
-                            "cn": [
-                                {
-                                    "type": "Ext.form.Label",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "height": 150,
-                                        "id": "userNameSpan",
-                                        "itemId": "userNameSpan",
-                                        "text": "Michele Rubin"
-                                    },
-                                    "name": "MyLabel",
-                                    "designerId": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
-                                }
-                            ]
+                            "name": "MyLabel",
+                            "designerId": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
                         },
                         {
-                            "type": "Ext.container.Container",
+                            "type": "Ext.button.Button",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "style": [
-                                    "text-align:center;"
-                                ]
+                                "id": "logoutCmd",
+                                "itemId": "logoutCmd",
+                                "text": "Logout"
                             },
-                            "name": "MyContainer",
-                            "designerId": "1767278d-f49a-4eab-877e-ff8316946671",
+                            "name": "MyButton2",
+                            "designerId": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
                             "cn": [
                                 {
-                                    "type": "Ext.button.Button",
+                                    "type": "viewcontrollereventbinding",
                                     "reference": {
-                                        "name": "items",
+                                        "name": "listeners",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "id": "logoutCmd",
-                                        "itemId": "logoutCmd",
-                                        "margin": "0 0 0 10",
-                                        "maxWidth": 100,
-                                        "minWidth": null,
-                                        "text": "Logout",
-                                        "width": 150
+                                        "fn": "onLogoutCmdClick",
+                                        "implHandler": [
+                                            "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(0);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
                                     },
-                                    "name": "MyButton2",
-                                    "designerId": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
-                                    "cn": [
-                                        {
-                                            "type": "viewcontrollereventbinding",
-                                            "reference": {
-                                                "name": "listeners",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "fn": "onLogoutCmdClick",
-                                                "implHandler": [
-                                                    "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(0);"
-                                                ],
-                                                "name": "click",
-                                                "scope": "me"
-                                            },
-                                            "name": "onLogoutCmdClick",
-                                            "designerId": "49dd7b73-962c-4823-8327-defb5ab09028"
-                                        }
-                                    ]
+                                    "name": "onLogoutCmdClick",
+                                    "designerId": "49dd7b73-962c-4823-8327-defb5ab09028"
                                 }
                             ]
                         }
@@ -209,7 +157,7 @@
             "userConfig": {
                 "layout|region": "west"
             },
-            "name": "menupanel11",
+            "name": "menupanel",
             "designerId": "8eca591d-0dd0-4bd3-a087-02e763eaab7d",
             "masterInstanceId": "53058cca-b155-4191-8d60-edd7e7260482"
         },
@@ -223,7 +171,7 @@
             "userConfig": {
                 "layout|region": "center"
             },
-            "name": "contentpanel11",
+            "name": "contentpanel",
             "designerId": "799ede13-4e73-40af-af5f-e652bd98d136",
             "masterInstanceId": "ff479e67-d14e-478e-8424-b5323f61b24a"
         }
