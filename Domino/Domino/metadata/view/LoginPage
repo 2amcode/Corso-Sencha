@@ -52,7 +52,7 @@
                         "layout|margins": null,
                         "layout|region": "center",
                         "margin": 50,
-                        "style": "background:#F9C068;"
+                        "style": "background:transparent;"
                     },
                     "name": "MyContainer3",
                     "configAlternates": {
@@ -76,7 +76,7 @@
                 "layout": "border",
                 "layout|flex": 1,
                 "minWidth": 300,
-                "style": "background:#D1ECF9",
+                "style": null,
                 "width": 300
             },
             "name": "MyContainer2",
@@ -123,7 +123,7 @@
                                 "id": "homeLoginMenuPanel",
                                 "itemId": null
                             },
-                            "name": "loginpanel",
+                            "name": "loginpanel1",
                             "designerId": "86ff9e00-136c-4aa7-8797-6ac48ce02252",
                             "masterInstanceId": "95f55b03-61d0-47e7-b8df-ffffeb19653a"
                         },
@@ -138,7 +138,7 @@
                                 "id": "homeLoginFormPanel",
                                 "itemId": null
                             },
-                            "name": "loginform",
+                            "name": "loginform1",
                             "designerId": "0fd3acd6-ee49-4476-9f0b-03b221188ee7",
                             "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
                         },
@@ -149,7 +149,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "myview",
+                            "name": "myview1",
                             "designerId": "5373255b-ffb8-4660-89ea-d8e29483825b",
                             "masterInstanceId": "e52cd7ae-0d51-4788-aaf6-a7109c4751b2"
                         }
