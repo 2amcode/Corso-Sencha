@@ -58,7 +58,7 @@
             ]
         },
         {
-            "type": "Ext.data.TreeStore",
+            "type": "Ext.data.Store",
             "reference": {
                 "name": "stores",
                 "type": "array"
@@ -67,8 +67,8 @@
             "userConfig": {
                 "name": "MenuStore"
             },
-            "name": "MyTreeStore",
-            "designerId": "1b76d5b6-c728-48f4-a457-b2e442c4abd2",
+            "name": "MyStore1",
+            "designerId": "ddcdd1e8-db0e-47b7-9eb3-c2b876b94074",
             "cn": [
                 {
                     "type": "Ext.data.proxy.Ajax",
@@ -109,7 +109,7 @@
                         "name": "name"
                     },
                     "name": "MyField2",
-                    "designerId": "3904aa36-6f23-4fca-b068-7e72337fd3c7"
+                    "designerId": "17555d03-64df-4976-b181-7c8a63a58c15"
                 },
                 {
                     "type": "Ext.data.field.Field",
@@ -122,7 +122,7 @@
                         "name": "url"
                     },
                     "name": "MyField3",
-                    "designerId": "238ede3b-c06f-4df9-b8cf-6b4403de7572"
+                    "designerId": "3c2b9288-bad9-4537-909e-e58a79ab33a4"
                 },
                 {
                     "type": "Ext.data.field.Field",
@@ -135,7 +135,7 @@
                         "name": "id"
                     },
                     "name": "MyField8",
-                    "designerId": "059806ff-456c-4bbf-9b4d-7bd75803726f"
+                    "designerId": "4f9eea16-2f38-415e-ab35-dcd037b89774"
                 }
             ]
         }

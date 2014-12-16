@@ -18,9 +18,9 @@ Ext.define('Domino.view.BrowsePanelViewModel', {
     alias: 'viewmodel.browsepanel',
 
     requires: [
+        'Ext.data.Store',
         'Ext.data.proxy.Ajax',
         'Ext.data.reader.Json',
-        'Ext.data.TreeStore',
         'Ext.data.field.Field'
     ],
 
@@ -38,7 +38,6 @@ Ext.define('Domino.view.BrowsePanelViewModel', {
             }
         },
         MenuStore: {
-            type: 'tree',
             proxy: {
                 type: 'ajax',
                 url: 'data/Menu.json',

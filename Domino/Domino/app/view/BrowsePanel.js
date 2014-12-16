@@ -19,13 +19,15 @@ Ext.define('Domino.view.BrowsePanel', {
 
     requires: [
         'Domino.view.BrowsePanelViewModel',
-        'Ext.tree.Panel',
-        'Ext.tree.View',
+        'Domino.view.BrowsePanelViewController',
         'Ext.grid.Panel',
         'Ext.grid.View',
-        'Ext.grid.column.Column'
+        'Ext.grid.column.Column',
+        'Ext.menu.Menu',
+        'Ext.menu.Item'
     ],
 
+    controller: 'browsepanel',
     viewModel: {
         type: 'browsepanel'
     },
@@ -40,20 +42,6 @@ Ext.define('Domino.view.BrowsePanel', {
         align: 'stretch'
     },
     items: [
-        {
-            xtype: 'treepanel',
-            flex: 1,
-            id: 'browseTree',
-            itemId: 'browseTree',
-            bodyStyle: 'background:#1BA1E2;',
-            title: 'Sfoglia...',
-            bind: {
-                store: '{MenuStore}'
-            },
-            viewConfig: {
-
-            }
-        },
         {
             xtype: 'gridpanel',
             flex: 5,
@@ -94,6 +82,27 @@ Ext.define('Domino.view.BrowsePanel', {
                     xtype: 'gridcolumn',
                     dataIndex: 'bornTerritory',
                     text: 'BornTerritory'
+                }
+            ]
+        }
+    ],
+    dockedItems: [
+        {
+            xtype: 'menu',
+            dock: 'left',
+            floating: false,
+            width: 120,
+            items: [
+                {
+                    xtype: 'menuitem',
+                    text: 'Maschi',
+                    listeners: {
+                        click: 'onMenuitemClick'
+                    }
+                },
+                {
+                    xtype: 'menuitem',
+                    text: 'Femmine'
                 }
             ]
         }
