@@ -305,7 +305,7 @@
                                     "    var i = item.up(\"#browsePanel\");",
                                     "    var store = i.viewModel.storeInfo.SubjectsListStore;",
                                     "    var proxy = store.proxy;",
-                                    "    proxy.url  =\"data/SoggettiFemmina.json\";",
+                                    "    proxy.url  =\"data/SoggettiFemmine.json\";",
                                     "    store.load();"
                                 ],
                                 "name": "click",

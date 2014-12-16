@@ -18,6 +18,13 @@ Ext.define('Domino.view.BrowsePanelViewController', {
     alias: 'controller.browsepanel',
 
     onMenuitemClick: function(item, e, eOpts) {
+        var i = item.up("#browsePanel");
+        var s = i.viewModel.storeInfo.SubjectsListStore;
+        s.proxy.url = "data/SoggettiFemmine.json";
+        s.load();
+    },
+
+    onMenuitemClick: function(item, e, eOpts) {
 
 
         var i = item.up("#browsePanel");
@@ -31,7 +38,7 @@ Ext.define('Domino.view.BrowsePanelViewController', {
         var i = item.up("#browsePanel");
         var store = i.viewModel.storeInfo.SubjectsListStore;
         var proxy = store.proxy;
-        proxy.url  ="data/SoggettiFemmina.json";
+        proxy.url  ="data/SoggettiFemmine.json";
         store.load();
     }
 
