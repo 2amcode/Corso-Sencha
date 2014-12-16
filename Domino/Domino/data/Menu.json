@@ -1,0 +1,14 @@
+{
+  "items" : [
+    {
+      "name" : "Soggetto1",
+      "id" : "1",
+      "url" : "/soggetto1"
+    },
+    {
+      "name" : "Soggetto2",
+      "id" : "2",
+      "url" : "/soggetto2"
+    }
+  ]
+}

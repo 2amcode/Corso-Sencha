@@ -15,5 +15,13 @@
 
 Ext.define('Domino.view.BrowsePanelViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.browsepanel'
+    alias: 'controller.browsepanel',
+
+    onMenuitemClick: function(item, e, eOpts) {
+        var i = item.up("#browsePanel");
+        var s = i.viewModel.storeInfo.SubjectsListStore;
+        s.proxy.url = "data/SoggettiFemmine.json";
+        s.load();
+    }
+
 });

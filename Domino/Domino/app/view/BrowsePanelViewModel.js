@@ -18,9 +18,10 @@ Ext.define('Domino.view.BrowsePanelViewModel', {
     alias: 'viewmodel.browsepanel',
 
     requires: [
-        'Ext.data.Store',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json'
+        'Ext.data.reader.Json',
+        'Ext.data.TreeStore',
+        'Ext.data.field.Field'
     ],
 
     stores: {
@@ -35,6 +36,28 @@ Ext.define('Domino.view.BrowsePanelViewModel', {
                     rootProperty: 'subjects'
                 }
             }
+        },
+        MenuStore: {
+            type: 'tree',
+            proxy: {
+                type: 'ajax',
+                url: 'data/Menu.json',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'items'
+                }
+            },
+            fields: [
+                {
+                    name: 'name'
+                },
+                {
+                    name: 'url'
+                },
+                {
+                    name: 'id'
+                }
+            ]
         }
     }
 
