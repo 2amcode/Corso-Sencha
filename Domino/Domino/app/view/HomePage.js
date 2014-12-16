@@ -31,8 +31,10 @@ Ext.define('Domino.view.HomePage', {
     viewModel: {
         type: 'homepage'
     },
+    height: '100%',
     id: 'homePage',
     itemId: 'homePage',
+    width: '100%',
     layout: 'border',
 
     items: [
@@ -68,44 +70,21 @@ Ext.define('Domino.view.HomePage', {
                     flex: 1,
                     id: 'userContainer',
                     itemId: 'userContainer',
-                    padding: '20 0 0 0 ',
-                    width: '100%',
-                    layout: {
-                        type: 'vbox',
-                        align: 'stretch'
-                    },
                     items: [
                         {
-                            xtype: 'container',
-                            style: 'text-align:center;',
-                            width: 150,
-                            items: [
-                                {
-                                    xtype: 'label',
-                                    height: 150,
-                                    id: 'userNameSpan',
-                                    itemId: 'userNameSpan',
-                                    text: 'Michele Rubin'
-                                }
-                            ]
+                            xtype: 'label',
+                            id: 'userNameSpan',
+                            itemId: 'userNameSpan',
+                            text: 'Michele Rubin'
                         },
                         {
-                            xtype: 'container',
-                            style: 'text-align:center;',
-                            items: [
-                                {
-                                    xtype: 'button',
-                                    id: 'logoutCmd',
-                                    itemId: 'logoutCmd',
-                                    margin: '0 0 0 10',
-                                    maxWidth: 100,
-                                    width: 150,
-                                    text: 'Logout',
-                                    listeners: {
-                                        click: 'onLogoutCmdClick'
-                                    }
-                                }
-                            ]
+                            xtype: 'button',
+                            id: 'logoutCmd',
+                            itemId: 'logoutCmd',
+                            text: 'Logout',
+                            listeners: {
+                                click: 'onLogoutCmdClick'
+                            }
                         }
                     ]
                 }

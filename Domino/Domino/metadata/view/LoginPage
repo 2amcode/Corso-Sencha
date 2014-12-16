@@ -52,7 +52,7 @@
                         "layout|margins": null,
                         "layout|region": "center",
                         "margin": 50,
-                        "style": "background:transparent;"
+                        "style": "background:#F9C068;"
                     },
                     "name": "MyContainer3",
                     "configAlternates": {
@@ -139,7 +139,7 @@
                 "layout": "border",
                 "layout|flex": 1,
                 "minWidth": 300,
-                "style": null,
+                "style": "background:#D1ECF9",
                 "width": 300
             },
             "name": "MyContainer2",
