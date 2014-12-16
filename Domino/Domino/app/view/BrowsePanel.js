@@ -22,10 +22,8 @@ Ext.define('Domino.view.BrowsePanel', {
         'Ext.tree.Panel',
         'Ext.tree.View',
         'Ext.grid.Panel',
-        'Ext.grid.column.Number',
-        'Ext.grid.column.Date',
-        'Ext.grid.column.Boolean',
-        'Ext.grid.View'
+        'Ext.grid.View',
+        'Ext.grid.column.Column'
     ],
 
     viewModel: {
@@ -49,6 +47,9 @@ Ext.define('Domino.view.BrowsePanel', {
             itemId: 'browseTree',
             bodyStyle: 'background:#1BA1E2;',
             title: 'Sfoglia...',
+            bind: {
+                store: '{MenuStore}'
+            },
             viewConfig: {
 
             }
@@ -60,26 +61,39 @@ Ext.define('Domino.view.BrowsePanel', {
             itemId: 'browseDetail',
             bodyStyle: 'background:#D1ECF9;',
             title: 'Iscritti 2',
+            bind: {
+                store: '{SubjectsListStore}'
+            },
             columns: [
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'String'
+                    dataIndex: 'bornCountry',
+                    text: 'BornCountry'
                 },
                 {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'number',
-                    text: 'Number'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'id',
+                    text: 'Id'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'Date'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'description',
+                    text: 'Description'
                 },
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'bool',
-                    text: 'Boolean'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'bornLocality',
+                    text: 'BornLocality'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'bornRegion',
+                    text: 'BornRegion'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'bornTerritory',
+                    text: 'BornTerritory'
                 }
             ]
         }
