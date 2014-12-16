@@ -24,7 +24,9 @@ Ext.define('Domino.view.BrowsePanel', {
         'Ext.menu.Item',
         'Ext.grid.Panel',
         'Ext.grid.View',
-        'Ext.grid.column.Column'
+        'Ext.grid.column.Column',
+        'Ext.menu.Menu',
+        'Ext.menu.Item'
     ],
 
     controller: 'browsepanel',
@@ -105,6 +107,27 @@ Ext.define('Domino.view.BrowsePanel', {
                     xtype: 'gridcolumn',
                     dataIndex: 'bornCountry',
                     text: 'BornCountry'
+                }
+            ]
+        }
+    ],
+    dockedItems: [
+        {
+            xtype: 'menu',
+            dock: 'left',
+            floating: false,
+            width: 120,
+            items: [
+                {
+                    xtype: 'menuitem',
+                    text: 'Maschi',
+                    listeners: {
+                        click: 'onMenuitemClick'
+                    }
+                },
+                {
+                    xtype: 'menuitem',
+                    text: 'Femmine'
                 }
             ]
         }

@@ -222,6 +222,75 @@
                     "designerId": "dcd770ba-5212-4348-b8bf-71cff7aa0d6d"
                 }
             ]
+        },
+        {
+            "type": "Ext.menu.Menu",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "LeftMenu",
+                "dock": "left",
+                "floating": false,
+                "width": 120
+            },
+            "name": "MyMenu2",
+            "designerId": "885ed71c-3199-4d8f-a567-1bf5cd8a0d78",
+            "cn": [
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Soggetto 1",
+                        "text": "Maschi"
+                    },
+                    "name": "MyMenuItem7",
+                    "designerId": "5145ebdc-1bf4-42ec-b33a-3ae716a443d1",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMenuitemClick",
+                                "implHandler": [
+                                    "",
+                                    "debugger;",
+                                    "var i = item.up(\"#browsePanel\");",
+                                    "i.viewModel.storeInfo.SubjectsListStore.proxy.url  =\"data/SoggettiFemmina.json\";",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onMenuitemClick",
+                            "designerId": "c739811c-ba9a-4c68-bb0f-1bd154a85f63"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Femmine"
+                    },
+                    "name": "MyMenuItem8",
+                    "designerId": "cfbe0c5f-bc5d-4c98-9d9f-c334d0670f9a"
+                }
+            ]
         }
     ]
 }
