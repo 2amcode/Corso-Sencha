@@ -20,11 +20,11 @@ Ext.define('Domino.view.BrowsePanel', {
     requires: [
         'Domino.view.BrowsePanelViewModel',
         'Domino.view.BrowsePanelViewController',
-        'Ext.menu.Menu',
-        'Ext.menu.Item',
         'Ext.grid.Panel',
         'Ext.grid.View',
-        'Ext.grid.column.Column'
+        'Ext.grid.column.Column',
+        'Ext.menu.Menu',
+        'Ext.menu.Item'
     ],
 
     controller: 'browsepanel',
@@ -42,29 +42,6 @@ Ext.define('Domino.view.BrowsePanel', {
         align: 'stretch'
     },
     items: [
-        {
-            xtype: 'menu',
-            flex: 1,
-            floating: false,
-            width: 120,
-            items: [
-                {
-                    xtype: 'menuitem',
-                    text: 'Soggetti',
-                    listeners: {
-                        click: 'onMenuitemClick'
-                    }
-                },
-                {
-                    xtype: 'menuitem',
-                    text: 'Maschi'
-                },
-                {
-                    xtype: 'menuitem',
-                    text: 'Femmine'
-                }
-            ]
-        },
         {
             xtype: 'gridpanel',
             flex: 5,
