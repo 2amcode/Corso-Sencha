@@ -102,7 +102,10 @@ Ext.define('Domino.view.BrowsePanel', {
                 },
                 {
                     xtype: 'menuitem',
-                    text: 'Femmine'
+                    text: 'Femmine',
+                    listeners: {
+                        click: 'onMenuitemClick1'
+                    }
                 }
             ]
         }

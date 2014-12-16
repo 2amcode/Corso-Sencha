@@ -166,7 +166,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "Soggetto 1",
+                        "designer|displayName": "",
                         "text": "Maschi"
                     },
                     "name": "MyMenuItem7",
@@ -183,10 +183,12 @@
                                 "fn": "onMenuitemClick",
                                 "implHandler": [
                                     "",
-                                    "debugger;",
-                                    "var i = item.up(\"#browsePanel\");",
-                                    "i.viewModel.storeInfo.SubjectsListStore.proxy.url  =\"data/SoggettiFemmina.json\";",
-                                    ""
+                                    "",
+                                    "    var i = item.up(\"#browsePanel\");",
+                                    "    var store = i.viewModel.storeInfo.SubjectsListStore;",
+                                    "    var proxy = store.proxy;",
+                                    "    proxy.url  =\"data/SoggettiMaschi.json\";",
+                                    "    store.load();"
                                 ],
                                 "name": "click",
                                 "scope": "me"
@@ -207,7 +209,31 @@
                         "text": "Femmine"
                     },
                     "name": "MyMenuItem8",
-                    "designerId": "cfbe0c5f-bc5d-4c98-9d9f-c334d0670f9a"
+                    "designerId": "cfbe0c5f-bc5d-4c98-9d9f-c334d0670f9a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMenuitemClick1",
+                                "implHandler": [
+                                    "    var i = item.up(\"#browsePanel\");",
+                                    "    var store = i.viewModel.storeInfo.SubjectsListStore;",
+                                    "    var proxy = store.proxy;",
+                                    "    proxy.url  =\"data/SoggettiFemmina.json\";",
+                                    "    store.load();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onMenuitemClick1",
+                            "designerId": "9bc73eba-b35f-4038-af77-58fed170514a"
+                        }
+                    ]
                 }
             ]
         }
