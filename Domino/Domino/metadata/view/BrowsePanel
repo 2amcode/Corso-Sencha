@@ -22,33 +22,59 @@
     "viewModelInstanceId": "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e",
     "cn": [
         {
-            "type": "Ext.tree.Panel",
+            "type": "Ext.menu.Menu",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "bodyStyle": [
-                    "background:#1BA1E2;"
-                ],
-                "id": "browseTree",
-                "itemId": "browseTree",
+                "designer|displayName": "LeftMenu",
+                "floating": false,
                 "layout|flex": 1,
-                "title": "Sfoglia..."
+                "width": 120
             },
-            "name": "MyTreePanel",
-            "designerId": "769b7ae4-8718-48ed-a9f4-4934370c16d1",
+            "name": "MyMenu2",
+            "designerId": "fb1dc406-5765-496b-bb13-e2aee3410bb4",
             "cn": [
                 {
-                    "type": "Ext.tree.View",
+                    "type": "Ext.menu.Item",
                     "reference": {
-                        "name": "viewConfig",
-                        "type": "object"
+                        "name": "items",
+                        "type": "array"
                     },
                     "codeClass": null,
-                    "name": "MyTreeView",
-                    "designerId": "11530a1e-6016-4d16-8b98-834e4d2d4719"
+                    "userConfig": {
+                        "text": "Menu Item"
+                    },
+                    "name": "MyMenuItem7",
+                    "designerId": "041a70f2-6d2a-4c72-a7ac-9642965b60e3"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Menu Item"
+                    },
+                    "name": "MyMenuItem8",
+                    "designerId": "66e1b7c1-739e-45ff-afb1-93be8cac6290"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Menu Item"
+                    },
+                    "name": "MyMenuItem9",
+                    "designerId": "d15c0f2a-051c-4eef-ac09-487955f5f39e"
                 }
             ]
         },

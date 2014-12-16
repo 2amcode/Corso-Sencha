@@ -19,8 +19,8 @@ Ext.define('Domino.view.BrowsePanel', {
 
     requires: [
         'Domino.view.BrowsePanelViewModel',
-        'Ext.tree.Panel',
-        'Ext.tree.View',
+        'Ext.menu.Menu',
+        'Ext.menu.Item',
         'Ext.grid.Panel',
         'Ext.grid.View',
         'Ext.grid.column.Column'
@@ -41,15 +41,24 @@ Ext.define('Domino.view.BrowsePanel', {
     },
     items: [
         {
-            xtype: 'treepanel',
+            xtype: 'menu',
             flex: 1,
-            id: 'browseTree',
-            itemId: 'browseTree',
-            bodyStyle: 'background:#1BA1E2;',
-            title: 'Sfoglia...',
-            viewConfig: {
-
-            }
+            floating: false,
+            width: 120,
+            items: [
+                {
+                    xtype: 'menuitem',
+                    text: 'Menu Item'
+                },
+                {
+                    xtype: 'menuitem',
+                    text: 'Menu Item'
+                },
+                {
+                    xtype: 'menuitem',
+                    text: 'Menu Item'
+                }
+            ]
         },
         {
             xtype: 'gridpanel',
