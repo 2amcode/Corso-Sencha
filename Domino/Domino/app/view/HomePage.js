@@ -39,10 +39,10 @@ Ext.define('Domino.view.HomePage', {
         {
             xtype: 'panel',
             region: 'north',
+            baseCls: 'x-panel headerPanel',
             height: 80,
             id: 'headerPanel',
             itemId: 'headerPanel',
-            bodyStyle: 'background:#1BA1E2;',
             header: false,
             layout: {
                 type: 'hbox',

@@ -20,10 +20,6 @@ Ext.define('Domino.view.LoginPanelViewController', {
     onMenuitemClick: function(item, e, eOpts) {
         var cntr = Ext.ComponentQuery.query("#loginPagesContainer")[0];
         cntr.setActiveItem(1);
-    },
-
-    onMenuActivate: function(component, eOpts) {
-
     }
 
 });

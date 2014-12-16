@@ -1,4 +1,127 @@
+@font-face {
+    font-family: 'Roboto';
+
+    src:url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+
+    src:url('RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//BLUE******************************
+
+$mainColor500:#2196F3;
+$mainColor900:#0D47A1;
+$mainColor100:#BBDEFB;
+$mainColor300:#64B5F6;
+
+//ORANGE******************************
+$accentColor400:#FF9100;
+$accentColor100:#FFD180;
+$accentColor100:#FF6D00;
+
+//INDIGO******************************
+
+//$mainColor500:#3F51B5;
+//$mainColor200:#9FA8DA;
+
+
+//LIGHT BLUE******************************
+
+//$mainColor500:#03A9F4;
+//$mainColor900:#01579B;
+
+.loginPanel{
+
+    //min-width:200px;
+
+    background:transparent;
+
+}
+.loginMenu{
+
+
+    background:#BBDEFB ;
+    font-weight: 500;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* firefox */
+    -webkit-border-radius: 10px; /* safari, chrome */
+}
+.logotecsisContainer{
+
+    text-align:right;
+}
+
+.promotionalContainer{
+
+
+    background:$mainColor900!important;//Blue 900
+
+}
+
+.loginContainer{
+
+
+    background:$mainColor500!important;//Blue 500
+}
+
+.dashPanel{
+
+    background:$mainColor100!important;
+}
+
+.headerPanel{
+
+    background:$mainColor500!important;
+}
+
+.menuPanel{
+
+    background:$mainColor300!important;
+}
+
+.maninMenu{
+    background:$mainColor900!important;
+
+}
+
+.mainMenuItem{
+
+    background:$mainColor900!important;
+    //border-bottom: 2px solid $mainColor500;
+}
+.mainMenuItemOver{
+
+    background:$mainColor500!important;
+    border-bottom: 5px solid red;
+}
+.textNormal{
+    color:#ffffff;
+    font:15px arial, sans-serif, bold;
+}
+.slogan{ //font-family: 'Roboto Condensed';
+
+    font-weight: 100;
+    font-style: italic;
+}
+$font-family: Roboto;
+$base-color: #2196F3 ;
+$button-default-background-color: rgba(13,71,161,1);
 $panel-header-color: rgba(33,150,243,1);
 $panel-body-background-color: transparent;
-$panel-header-font-family: "Times New Roman", "Times New Roman", Times, serif;
+$panel-header-font-family: "Roboto Condensed", Arial, sans-serif;
 $panel-header-glyph-color: rgba(33,150,243,1);
+$form-label-font-color: rgba(0,0,0,1);
+$form-text-field-empty-color: rgba(238,28,28,1);
+$form-checkbox-label-color: rgba(0,0,0,1);
+$menu-item-active-background-color: $accentColor400;
+$menu-item-border-width: 1;
+$menu-background-color: rgba(254,254,254,0);
+$menu-border-width: 0 0 1px 0;
+$menu-item-font-weight: bold;
+$menu-item-active-border-radius: 10;

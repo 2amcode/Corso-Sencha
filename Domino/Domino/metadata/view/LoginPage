@@ -58,7 +58,70 @@
                     "configAlternates": {
                         "style": "string"
                     },
-                    "designerId": "0483c7e0-28e9-482a-8740-1aa9be79a749"
+                    "designerId": "0483c7e0-28e9-482a-8740-1aa9be79a749",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 150,
+                                "html": [
+                                    "<h1>LOGO DOMINO</h1>"
+                                ],
+                                "id": "logoContainer",
+                                "itemId": "logoContainer",
+                                "layout|region": "north"
+                            },
+                            "name": "MyContainer9",
+                            "designerId": "7215a1a5-1f92-4440-8367-7123234f7bc2"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "x-container slogan",
+                                "html": [
+                                    "<h2>Slogan info principali dell'applicazione</h2>"
+                                ],
+                                "id": "sloganContainer",
+                                "itemId": "sloganContainer",
+                                "layout|region": "center"
+                            },
+                            "name": "MyContainer5",
+                            "designerId": "c4ca90f4-ad9e-4213-be63-03d8e685874d"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "x-container logotecsisContainer",
+                                "height": 80,
+                                "html": [
+                                    "<img src=\"resources/images/Logo_TecSisNet.png\"/>"
+                                ],
+                                "id": "logotecsisContainer",
+                                "itemId": "logotecsisContainer",
+                                "layout": "fit",
+                                "layout|region": "south",
+                                "maxWidth": null,
+                                "minWidth": null
+                            },
+                            "name": "MyContainer10",
+                            "designerId": "c83d79e3-5700-48af-a83e-4eedda2a33c2"
+                        }
+                    ]
                 }
             ]
         },
@@ -123,7 +186,7 @@
                                 "id": "homeLoginMenuPanel",
                                 "itemId": null
                             },
-                            "name": "loginpanel1",
+                            "name": "loginpanel",
                             "designerId": "86ff9e00-136c-4aa7-8797-6ac48ce02252",
                             "masterInstanceId": "95f55b03-61d0-47e7-b8df-ffffeb19653a"
                         },
@@ -138,7 +201,7 @@
                                 "id": "homeLoginFormPanel",
                                 "itemId": null
                             },
-                            "name": "loginform1",
+                            "name": "loginform",
                             "designerId": "0fd3acd6-ee49-4476-9f0b-03b221188ee7",
                             "masterInstanceId": "05cb7b91-cd4a-4d54-8b81-d44f87b36dbd"
                         },
@@ -149,7 +212,7 @@
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "name": "myview1",
+                            "name": "myview",
                             "designerId": "5373255b-ffb8-4660-89ea-d8e29483825b",
                             "masterInstanceId": "e52cd7ae-0d51-4788-aaf6-a7109c4751b2"
                         }

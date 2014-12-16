@@ -6,9 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "bodyStyle": [
-            "background:#75C6EE;"
-        ],
+        "baseCls": "x-panel menuPanel",
+        "bodyStyle": null,
         "designer|userAlias": "menupanel",
         "designer|userClassName": "MenuPanel",
         "header": false,
@@ -34,6 +33,7 @@
                 "floating": false,
                 "id": "mainMenu",
                 "itemId": "mainMenu",
+                "overCls": null,
                 "title": null,
                 "width": 120
             },
@@ -48,8 +48,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "x-menu-item mainMenuItem",
                         "id": "dashMenuItem",
-                        "style": "background:#1BA1E2;",
+                        "style": null,
                         "text": "Dashboard"
                     },
                     "name": "MyMenuItem3",
@@ -87,6 +88,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "hidden": true,
                         "id": "topSeparator",
                         "style": null
                     },
@@ -101,8 +103,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "x-menu-item mainMenuItem",
                         "id": "notificationsMenuItem",
-                        "style": "background:#1BA1E2;",
+                        "style": null,
                         "text": "Notifiche"
                     },
                     "name": "MyMenuItem4",
@@ -119,6 +122,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "hidden": true,
                         "id": "middleSeparator"
                     },
                     "name": "MySeparator1",
@@ -132,8 +136,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "x-menu-item mainMenuItem",
                         "id": "browseMenuItem",
-                        "style": "background:#1BA1E2;",
+                        "style": null,
                         "text": "Sfoglia"
                     },
                     "name": "MyMenuItem5",
@@ -171,6 +176,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "hidden": true,
                         "id": "bottomSeparator"
                     },
                     "name": "MySeparator2",
@@ -184,8 +190,9 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "x-menu-item mainMenuItem",
                         "id": "settingsMenuItem",
-                        "style": "background:#1BA1E2;",
+                        "style": null,
                         "text": "Acquista e configura"
                     },
                     "name": "MyMenuItem6",

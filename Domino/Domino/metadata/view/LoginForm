@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "bodyPadding": 10,
+        "designer|uiInterfaceName": "default",
         "designer|userAlias": "loginform",
         "designer|userClassName": "LoginForm",
         "header": false,

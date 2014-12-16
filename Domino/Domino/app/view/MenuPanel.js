@@ -28,10 +28,10 @@ Ext.define('Domino.view.MenuPanel', {
     viewModel: {
         type: 'menupanel'
     },
+    baseCls: 'x-panel menuPanel',
     id: 'menuPanel',
     itemId: 'menuPanel',
     width: 150,
-    bodyStyle: 'background:#75C6EE;',
     header: false,
     title: 'menuPanel',
 
@@ -46,8 +46,8 @@ Ext.define('Domino.view.MenuPanel', {
             items: [
                 {
                     xtype: 'menuitem',
+                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'dashMenuItem',
-                    style: 'background:#1BA1E2;',
                     text: 'Dashboard',
                     listeners: {
                         click: 'onDashMenuItemClick'
@@ -55,22 +55,24 @@ Ext.define('Domino.view.MenuPanel', {
                 },
                 {
                     xtype: 'menuseparator',
+                    hidden: true,
                     id: 'topSeparator'
                 },
                 {
                     xtype: 'menuitem',
+                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'notificationsMenuItem',
-                    style: 'background:#1BA1E2;',
                     text: 'Notifiche'
                 },
                 {
                     xtype: 'menuseparator',
+                    hidden: true,
                     id: 'middleSeparator'
                 },
                 {
                     xtype: 'menuitem',
+                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'browseMenuItem',
-                    style: 'background:#1BA1E2;',
                     text: 'Sfoglia',
                     listeners: {
                         click: 'onBrowseMenuItemClick'
@@ -78,12 +80,13 @@ Ext.define('Domino.view.MenuPanel', {
                 },
                 {
                     xtype: 'menuseparator',
+                    hidden: true,
                     id: 'bottomSeparator'
                 },
                 {
                     xtype: 'menuitem',
+                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'settingsMenuItem',
-                    style: 'background:#1BA1E2;',
                     text: 'Acquista e configura'
                 }
             ]

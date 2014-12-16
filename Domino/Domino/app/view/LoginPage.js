@@ -53,7 +53,35 @@ Ext.define('Domino.view.LoginPage', {
                     itemId: 'centerContainer',
                     margin: 50,
                     style: 'background:transparent;',
-                    layout: 'border'
+                    layout: 'border',
+                    items: [
+                        {
+                            xtype: 'container',
+                            region: 'north',
+                            height: 150,
+                            html: '<h1>LOGO DOMINO</h1>',
+                            id: 'logoContainer',
+                            itemId: 'logoContainer'
+                        },
+                        {
+                            xtype: 'container',
+                            region: 'center',
+                            baseCls: 'x-container slogan',
+                            html: '<h2>Slogan info principali dell\'applicazione</h2>',
+                            id: 'sloganContainer',
+                            itemId: 'sloganContainer'
+                        },
+                        {
+                            xtype: 'container',
+                            region: 'south',
+                            baseCls: 'x-container logotecsisContainer',
+                            height: 80,
+                            html: '<img src="resources/images/Logo_TecSisNet.png"/>',
+                            id: 'logotecsisContainer',
+                            itemId: 'logotecsisContainer',
+                            layout: 'fit'
+                        }
+                    ]
                 }
             ]
         },

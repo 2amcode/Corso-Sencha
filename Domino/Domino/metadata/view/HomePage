@@ -31,9 +31,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "bodyStyle": [
-                    "background:#1BA1E2;"
-                ],
+                "baseCls": "x-panel headerPanel",
                 "container|align": "stretch",
                 "header": false,
                 "height": 80,
@@ -209,7 +207,7 @@
             "userConfig": {
                 "layout|region": "west"
             },
-            "name": "menupanel11",
+            "name": "menupanel",
             "designerId": "8eca591d-0dd0-4bd3-a087-02e763eaab7d",
             "masterInstanceId": "53058cca-b155-4191-8d60-edd7e7260482"
         },
@@ -223,7 +221,7 @@
             "userConfig": {
                 "layout|region": "center"
             },
-            "name": "contentpanel11",
+            "name": "contentpanel",
             "designerId": "799ede13-4e73-40af-af5f-e652bd98d136",
             "masterInstanceId": "ff479e67-d14e-478e-8424-b5323f61b24a"
         }

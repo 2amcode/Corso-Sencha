@@ -26,10 +26,10 @@ Ext.define('Domino.view.DashPanel', {
     viewModel: {
         type: 'dashpanel'
     },
+    baseCls: 'x-panel dashPanel',
     id: 'dashPanel',
     itemId: 'dashPanel',
     layout: 'absolute',
-    bodyStyle: 'background:#D1ECF9;',
     header: false,
     title: 'Dashboard',
 

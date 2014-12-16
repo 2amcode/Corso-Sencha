@@ -38,6 +38,7 @@ Ext.define('Domino.view.LoginPanel', {
     items: [
         {
             xtype: 'menu',
+            baseCls: 'x-menu loginMenu',
             floating: false,
             id: 'loginMenu',
             itemId: 'loginMenu',
@@ -61,10 +62,7 @@ Ext.define('Domino.view.LoginPanel', {
                     xtype: 'menuitem',
                     text: 'Login via Google'
                 }
-            ],
-            listeners: {
-                activate: 'onMenuActivate'
-            }
+            ]
         }
     ]
 

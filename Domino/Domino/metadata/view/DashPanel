@@ -6,9 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "bodyStyle": [
-            "background:#D1ECF9;"
-        ],
+        "baseCls": "x-panel dashPanel",
         "designer|snapToGrid": 10,
         "designer|userAlias": "dashpanel",
         "designer|userClassName": "DashPanel",
