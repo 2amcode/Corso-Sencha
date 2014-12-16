@@ -8,11 +8,11 @@
     "userConfig": {
         "designer|userAlias": "homepage",
         "designer|userClassName": "HomePage",
-        "height": "100%",
+        "height": null,
         "id": "homePage",
         "itemId": "homePage",
         "layout": "border",
-        "width": "100%"
+        "width": null
     },
     "name": "MyContainer5",
     "designerId": "87eb3161-64e3-4894-bfd8-88d1bdecde2b",

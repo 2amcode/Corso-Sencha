@@ -31,10 +31,8 @@ Ext.define('Domino.view.HomePage', {
     viewModel: {
         type: 'homepage'
     },
-    height: '100%',
     id: 'homePage',
     itemId: 'homePage',
-    width: '100%',
     layout: 'border',
 
     items: [

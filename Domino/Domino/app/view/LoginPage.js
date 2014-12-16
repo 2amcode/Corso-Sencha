@@ -52,7 +52,7 @@ Ext.define('Domino.view.LoginPage', {
                     id: 'centerContainer',
                     itemId: 'centerContainer',
                     margin: 50,
-                    style: 'background:transparent;',
+                    style: 'background:#F9C068;',
                     layout: 'border',
                     items: [
                         {
@@ -91,6 +91,7 @@ Ext.define('Domino.view.LoginPage', {
             baseCls: 'x-container loginContainer',
             itemId: 'loginContainer',
             minWidth: 300,
+            style: 'background:#D1ECF9',
             width: 300,
             layout: 'border',
             items: [
