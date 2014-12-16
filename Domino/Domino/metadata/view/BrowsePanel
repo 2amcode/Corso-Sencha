@@ -66,67 +66,17 @@
                 "id": "browseDetail",
                 "itemId": "browseDetail",
                 "layout|flex": 5,
+                "store": [
+                    "{SubjectsListStore}"
+                ],
                 "title": "Iscritti 2"
             },
             "name": "MyGridPanel",
+            "configAlternates": {
+                "store": "binding"
+            },
             "designerId": "430dbaa6-aeb3-408b-ba9b-db08d782bcf4",
             "cn": [
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "string",
-                        "text": "String"
-                    },
-                    "name": "MyColumn",
-                    "designerId": "7a37facb-5975-4fd4-8d33-3ba55f8a25a1"
-                },
-                {
-                    "type": "Ext.grid.column.Number",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "number",
-                        "text": "Number"
-                    },
-                    "name": "MyNumberColumn",
-                    "designerId": "410cbaa2-61bd-46f7-bbe8-7f704aef37b7"
-                },
-                {
-                    "type": "Ext.grid.column.Date",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "date",
-                        "text": "Date"
-                    },
-                    "name": "MyDateColumn",
-                    "designerId": "7ac69b18-aab9-459c-8323-04499b6cc388"
-                },
-                {
-                    "type": "Ext.grid.column.Boolean",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "bool",
-                        "text": "Boolean"
-                    },
-                    "name": "MyBooleanColumn",
-                    "designerId": "a30af4a9-b1ad-42cd-95cc-631cc7902d00"
-                },
                 {
                     "type": "Ext.grid.View",
                     "reference": {
@@ -136,6 +86,90 @@
                     "codeClass": null,
                     "name": "MyGridView",
                     "designerId": "7e32fcd6-1a30-4740-a0d1-cc3c9d1c44b2"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id",
+                        "text": "Id"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "af85d84b-073a-4438-bad1-5d7f5c4cbd14"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "description",
+                        "text": "Description"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "7d01b221-17fd-4735-9af1-2e50977a7305"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bornLocality",
+                        "text": "BornLocality"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "3b34c999-d24f-41e6-8f87-8195264ff933"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bornRegion",
+                        "text": "BornRegion"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "a71095bc-617e-4fb2-ab90-9b7aeee3ff4f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bornTerritory",
+                        "text": "BornTerritory"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "67d7b99b-e848-40b8-a06e-d90ddd22e191"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bornCountry",
+                        "text": "BornCountry"
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "dcd770ba-5212-4348-b8bf-71cff7aa0d6d"
                 }
             ]
         }

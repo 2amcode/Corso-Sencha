@@ -9,5 +9,52 @@
         "designer|userAlias": "browsepanel",
         "designer|userClassName": "BrowsePanelViewModel"
     },
-    "designerId": "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e"
+    "designerId": "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e",
+    "cn": [
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "model": "SubjectModel",
+                "name": "SubjectsListStore"
+            },
+            "name": "MyJsonStore",
+            "designerId": "f9f115cc-6d51-468c-a0e6-8c0e3f8555d8",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "data/SoggettiLista.json"
+                    },
+                    "name": "MyAjaxProxy",
+                    "designerId": "1d140851-5ff3-4330-88cb-2407d8e88df4",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "subjects"
+                            },
+                            "name": "MyJsonReader",
+                            "designerId": "777132dc-0776-4645-afff-b5ccfa72438d"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

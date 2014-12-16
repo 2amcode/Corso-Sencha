@@ -15,6 +15,27 @@
 
 Ext.define('Domino.view.BrowsePanelViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.browsepanel'
+    alias: 'viewmodel.browsepanel',
+
+    requires: [
+        'Ext.data.Store',
+        'Ext.data.proxy.Ajax',
+        'Ext.data.reader.Json'
+    ],
+
+    stores: {
+        SubjectsListStore: {
+            autoLoad: true,
+            model: 'Domino.model.SubjectModel',
+            proxy: {
+                type: 'ajax',
+                url: 'data/SoggettiLista.json',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'subjects'
+                }
+            }
+        }
+    }
 
 });
