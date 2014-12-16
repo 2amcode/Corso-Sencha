@@ -20,8 +20,6 @@ Ext.define('Domino.view.BrowsePanel', {
     requires: [
         'Domino.view.BrowsePanelViewModel',
         'Domino.view.BrowsePanelViewController',
-        'Ext.menu.Menu',
-        'Ext.menu.Item',
         'Ext.grid.Panel',
         'Ext.grid.View',
         'Ext.grid.column.Column',
@@ -45,29 +43,6 @@ Ext.define('Domino.view.BrowsePanel', {
     },
     items: [
         {
-            xtype: 'menu',
-            flex: 1,
-            floating: false,
-            width: 120,
-            items: [
-                {
-                    xtype: 'menuitem',
-                    text: 'Soggetti',
-                    listeners: {
-                        click: 'onMenuitemClick'
-                    }
-                },
-                {
-                    xtype: 'menuitem',
-                    text: 'Maschi'
-                },
-                {
-                    xtype: 'menuitem',
-                    text: 'Femmine'
-                }
-            ]
-        },
-        {
             xtype: 'gridpanel',
             flex: 5,
             id: 'browseDetail',
@@ -78,6 +53,11 @@ Ext.define('Domino.view.BrowsePanel', {
                 store: '{SubjectsListStore}'
             },
             columns: [
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'bornCountry',
+                    text: 'BornCountry'
+                },
                 {
                     xtype: 'gridcolumn',
                     dataIndex: 'id',
@@ -102,11 +82,6 @@ Ext.define('Domino.view.BrowsePanel', {
                     xtype: 'gridcolumn',
                     dataIndex: 'bornTerritory',
                     text: 'BornTerritory'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'bornCountry',
-                    text: 'BornCountry'
                 }
             ]
         }
@@ -127,7 +102,10 @@ Ext.define('Domino.view.BrowsePanel', {
                 },
                 {
                     xtype: 'menuitem',
-                    text: 'Femmine'
+                    text: 'Femmine',
+                    listeners: {
+                        click: 'onMenuitemClick1'
+                    }
                 }
             ]
         }

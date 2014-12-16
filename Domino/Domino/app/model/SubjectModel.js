@@ -22,6 +22,9 @@ Ext.define('Domino.model.SubjectModel', {
 
     fields: [
         {
+            name: 'bornCountry'
+        },
+        {
             name: 'id'
         },
         {
@@ -35,9 +38,6 @@ Ext.define('Domino.model.SubjectModel', {
         },
         {
             name: 'bornTerritory'
-        },
-        {
-            name: 'bornCountry'
         }
     ]
 });

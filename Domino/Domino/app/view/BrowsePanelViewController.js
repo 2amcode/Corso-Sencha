@@ -19,9 +19,18 @@ Ext.define('Domino.view.BrowsePanelViewController', {
 
     onMenuitemClick: function(item, e, eOpts) {
         var i = item.up("#browsePanel");
-        var s = i.viewModel.storeInfo.SubjectsListStore;
-        s.proxy.url = "data/SoggettiFemmine.json";
-        s.load();
+        var store = i.viewModel.storeInfo.SubjectsListStore;
+        var proxy = store.proxy;
+        proxy.url  ="data/SoggettiMaschi.json";
+        store.load();
+    },
+
+    onMenuitemClick1: function(item, e, eOpts) {
+        var i = item.up("#browsePanel");
+        var store = i.viewModel.storeInfo.SubjectsListStore;
+        var proxy = store.proxy;
+        proxy.url  ="data/SoggettiFemmine.json";
+        store.load();
     }
 
 });
