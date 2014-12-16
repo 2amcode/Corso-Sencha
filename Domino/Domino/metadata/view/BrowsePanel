@@ -22,6 +22,87 @@
     "viewModelInstanceId": "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e",
     "cn": [
         {
+            "type": "Ext.menu.Menu",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "LeftMenu",
+                "floating": false,
+                "layout|flex": 1,
+                "width": 120
+            },
+            "name": "MyMenu2",
+            "designerId": "fb1dc406-5765-496b-bb13-e2aee3410bb4",
+            "cn": [
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": null,
+                        "text": "Soggetti"
+                    },
+                    "name": "MyMenuItem7",
+                    "designerId": "041a70f2-6d2a-4c72-a7ac-9642965b60e3",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMenuitemClick",
+                                "implHandler": [
+                                    "var i = item.up(\"#browsePanel\");",
+                                    "var s = i.viewModel.storeInfo.SubjectsListStore;",
+                                    "s.proxy.url = \"data/SoggettiFemmine.json\";",
+                                    "s.load();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onMenuitemClick",
+                            "designerId": "d44dbcd5-7826-47f6-9f54-cc8d7563f63c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Maschi"
+                    },
+                    "name": "MyMenuItem8",
+                    "designerId": "66e1b7c1-739e-45ff-afb1-93be8cac6290"
+                },
+                {
+                    "type": "Ext.menu.Item",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Femmine"
+                    },
+                    "name": "MyMenuItem9",
+                    "designerId": "d15c0f2a-051c-4eef-ac09-487955f5f39e"
+                }
+            ]
+        },
+        {
             "type": "Ext.grid.Panel",
             "reference": {
                 "name": "items",
@@ -64,25 +145,11 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "dataIndex": "bornCountry",
-                        "text": "BornCountry"
-                    },
-                    "name": "MyColumn1",
-                    "designerId": "a6dd8edf-aa25-4d17-a582-7c14407e6c45"
-                },
-                {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
                         "dataIndex": "id",
                         "text": "Id"
                     },
-                    "name": "MyColumn2",
-                    "designerId": "a12f0afc-3364-489b-9ccf-5cc7a7096b78"
+                    "name": "MyColumn1",
+                    "designerId": "af85d84b-073a-4438-bad1-5d7f5c4cbd14"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -95,8 +162,8 @@
                         "dataIndex": "description",
                         "text": "Description"
                     },
-                    "name": "MyColumn3",
-                    "designerId": "465018b0-7849-4384-a1f6-7e05ebe19d78"
+                    "name": "MyColumn2",
+                    "designerId": "7d01b221-17fd-4735-9af1-2e50977a7305"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -109,8 +176,8 @@
                         "dataIndex": "bornLocality",
                         "text": "BornLocality"
                     },
-                    "name": "MyColumn4",
-                    "designerId": "41bd3a79-662f-4081-955a-2e1cd2bb1c7a"
+                    "name": "MyColumn3",
+                    "designerId": "3b34c999-d24f-41e6-8f87-8195264ff933"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -123,8 +190,8 @@
                         "dataIndex": "bornRegion",
                         "text": "BornRegion"
                     },
-                    "name": "MyColumn5",
-                    "designerId": "081feb37-3833-45a1-a2c2-38c56cf8682f"
+                    "name": "MyColumn4",
+                    "designerId": "a71095bc-617e-4fb2-ab90-9b7aeee3ff4f"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -137,8 +204,22 @@
                         "dataIndex": "bornTerritory",
                         "text": "BornTerritory"
                     },
+                    "name": "MyColumn5",
+                    "designerId": "67d7b99b-e848-40b8-a06e-d90ddd22e191"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bornCountry",
+                        "text": "BornCountry"
+                    },
                     "name": "MyColumn6",
-                    "designerId": "b4c55c3c-9665-4337-aa69-1b1146f22bf2"
+                    "designerId": "dcd770ba-5212-4348-b8bf-71cff7aa0d6d"
                 }
             ]
         },
