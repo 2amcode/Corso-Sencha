@@ -68,21 +68,41 @@ Ext.define('Domino.view.HomePage', {
                     flex: 1,
                     id: 'userContainer',
                     itemId: 'userContainer',
+                    layout: {
+                        type: 'vbox',
+                        align: 'stretch'
+                    },
                     items: [
                         {
-                            xtype: 'label',
-                            id: 'userNameSpan',
-                            itemId: 'userNameSpan',
-                            text: 'Michele Rubin'
+                            xtype: 'container',
+                            baseCls: 'x-container usernameContainer',
+                            id: 'usernameContainer',
+                            itemId: 'usernameContainer',
+                            items: [
+                                {
+                                    xtype: 'label',
+                                    id: 'userNameSpan',
+                                    itemId: 'userNameSpan',
+                                    text: 'Michele Rubin'
+                                }
+                            ]
                         },
                         {
-                            xtype: 'button',
-                            id: 'logoutCmd',
-                            itemId: 'logoutCmd',
-                            text: 'Logout',
-                            listeners: {
-                                click: 'onLogoutCmdClick'
-                            }
+                            xtype: 'container',
+                            baseCls: 'x-container logoutCmdContainer',
+                            id: 'logoutCmdContainer',
+                            itemId: 'logoutCmdContainer',
+                            items: [
+                                {
+                                    xtype: 'button',
+                                    id: 'logoutCmd',
+                                    itemId: 'logoutCmd',
+                                    text: 'Logout',
+                                    listeners: {
+                                        click: 'onLogoutCmdClick'
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }

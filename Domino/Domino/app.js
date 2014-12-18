@@ -34,6 +34,7 @@ Ext.application({
         'ContentPanel',
         'BrowsePanel'
     ],
+    glyphFontFamily: 'FontAwesome',
     name: 'Domino',
 
     launch: function() {

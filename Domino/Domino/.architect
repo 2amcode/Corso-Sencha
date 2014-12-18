@@ -76,9 +76,6 @@
                         },
                         {
                             "id": "c11d6068-09d5-429e-a844-d44a57ba6ce0"
-                        },
-                        {
-                            "id": "84ab9add-3e81-441a-9f09-342a41da7c19"
                         }
                     ]
                 }
@@ -115,17 +112,27 @@
                         },
                         {
                             "id": "d0cf79a2-368d-41aa-8087-2d1b8cb69933",
-                            "expanded": false,
                             "cn": [
                                 {
-                                    "id": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
-                                },
-                                {
-                                    "id": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
+                                    "id": "7142ca41-82d5-44c5-b1c1-80570611d77f",
                                     "expanded": false,
                                     "cn": [
                                         {
-                                            "id": "49dd7b73-962c-4823-8327-defb5ab09028"
+                                            "id": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "9199cce7-138f-45a0-bd97-5af2aa7f376e",
+                                    "cn": [
+                                        {
+                                            "id": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
+                                            "expanded": false,
+                                            "cn": [
+                                                {
+                                                    "id": "49dd7b73-962c-4823-8327-defb5ab09028"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -224,7 +231,6 @@
                     "cn": [
                         {
                             "id": "8a241e81-7a6e-45f5-9d73-4d52acf25c99",
-                            "expanded": false,
                             "cn": [
                                 {
                                     "id": "e7398e7d-447d-4145-97ff-378036866dff"
@@ -232,13 +238,7 @@
                             ]
                         },
                         {
-                            "id": "475966f3-7089-43ca-b8fd-f449a5271d7b"
-                        },
-                        {
                             "id": "c4dae8de-ee07-4709-bc52-bcf8535ece4d"
-                        },
-                        {
-                            "id": "23f35323-5ee6-4a28-ada4-859e8b9701a8"
                         },
                         {
                             "id": "d2b1ae3b-c753-4298-9bcb-a29b7b2acae8",
@@ -247,9 +247,6 @@
                                     "id": "9c15ca81-7f76-4cf5-86cc-7897b6653379"
                                 }
                             ]
-                        },
-                        {
-                            "id": "ca1a0276-4265-4fdc-9d58-09e4fd10042b"
                         },
                         {
                             "id": "814d5d1e-acc3-4ff8-8ff5-9694fc9b9bd3"
@@ -425,15 +422,16 @@
             "87eb3161-64e3-4894-bfd8-88d1bdecde2b",
             "c9898e50-17ef-4f6b-8beb-12b2fc24eedf",
             "e4a124ed-aeb5-49da-8689-6a67e5cc9e1e",
-            "ea33803b-9cb0-4286-8e66-b4defc3be040"
+            "ea33803b-9cb0-4286-8e66-b4defc3be040",
+            "application"
         ]
     },
     "canvasState": {
-        "topInstance": "79e71e66-0adb-4319-bff4-965ed04ff71e"
+        "topInstance": "55a8da6a-e8ba-4076-8ae5-4a3490457936"
     },
     "inspectorState": {
-        "topInstance": "79e71e66-0adb-4319-bff4-965ed04ff71e",
-        "selectedInstance": "430dbaa6-aeb3-408b-ba9b-db08d782bcf4"
+        "topInstance": "55a8da6a-e8ba-4076-8ae5-4a3490457936",
+        "selectedInstance": "55a8da6a-e8ba-4076-8ae5-4a3490457936"
     },
     "editMode": "design",
     "userSettings": {

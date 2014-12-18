@@ -45,6 +45,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "baseCls": "x-container centerContainer",
                         "id": "centerContainer",
                         "itemId": "centerContainer",
                         "layout": "border",
@@ -52,7 +53,7 @@
                         "layout|margins": null,
                         "layout|region": "center",
                         "margin": 50,
-                        "style": "background:#F9C068;"
+                        "style": null
                     },
                     "name": "MyContainer3",
                     "configAlternates": {

@@ -13,6 +13,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+    src: url('./fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('./fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'glyphicons';
+    src: url('../fonts/glyphicons-halflings-regular.ttf') format('truetype');
+    src: url('./fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 //BLUE******************************
 
 $mainColor500:#2196F3;
@@ -23,7 +39,7 @@ $mainColor300:#64B5F6;
 //ORANGE******************************
 $accentColor400:#FF9100;
 $accentColor100:#FFD180;
-$accentColor100:#FF6D00;
+$accentColor700:#FF6D00;
 
 //INDIGO******************************
 
@@ -70,6 +86,7 @@ $accentColor100:#FF6D00;
     background:$mainColor500!important;//Blue 500
 }
 
+
 .dashPanel{
 
     background:$mainColor100!important;
@@ -80,6 +97,11 @@ $accentColor100:#FF6D00;
     background:$mainColor500!important;
 }
 
+.usernameContainer, .logoutCmdContainer
+{
+    text-align:center;
+
+}
 .menuPanel{
 
     background:$mainColor300!important;
@@ -90,27 +112,25 @@ $accentColor100:#FF6D00;
 
 }
 
-.mainMenuItem{
+/*.mainMenuItem{
 
-    background:$mainColor900!important;
-    //border-bottom: 2px solid $mainColor500;
+background:$mainColor900!important;
+border-bottom: 2px solid $mainColor500!important;
 }
 .mainMenuItemOver{
 
-    background:$mainColor500!important;
-    border-bottom: 5px solid red;
-}
-.textNormal{
-    color:#ffffff;
-    font:15px arial, sans-serif, bold;
-}
+background:$mainColor500!important;
+border-bottom: 5px solid red;
+}*/
+
 .slogan{ //font-family: 'Roboto Condensed';
 
     font-weight: 100;
     font-style: italic;
 }
-$font-family: Roboto;
-$base-color: #2196F3 ;
+$font-family: Roboto, Helvetica, sans-serif;
+$base-color: $mainColor500;
+$body-background-color: transparent;
 $button-default-background-color: rgba(13,71,161,1);
 $panel-header-color: rgba(33,150,243,1);
 $panel-body-background-color: transparent;
@@ -119,7 +139,8 @@ $panel-header-glyph-color: rgba(33,150,243,1);
 $form-label-font-color: rgba(0,0,0,1);
 $form-text-field-empty-color: rgba(238,28,28,1);
 $form-checkbox-label-color: rgba(0,0,0,1);
-$menu-item-active-background-color: $accentColor400;
+$border-layout-ct-background-color: transparent;
+$menu-item-active-background-color: $accentColor100;
 $menu-item-border-width: 1;
 $menu-background-color: rgba(254,254,254,0);
 $menu-border-width: 0 0 1px 0;

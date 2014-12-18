@@ -29,12 +29,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|uiInterfaceName": "dashmenu",
                 "dock": "bottom",
                 "floating": false,
                 "id": "mainMenu",
                 "itemId": "mainMenu",
                 "overCls": null,
                 "title": null,
+                "ui": "dashmenu",
                 "width": 120
             },
             "name": "MyMenu1",
@@ -48,7 +50,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "baseCls": "x-menu-item mainMenuItem",
+                        "glyph": "xe043@glyphicons",
                         "id": "dashMenuItem",
                         "style": null,
                         "text": "Dashboard"
@@ -81,21 +83,6 @@
                     ]
                 },
                 {
-                    "type": "Ext.menu.Separator",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "hidden": true,
-                        "id": "topSeparator",
-                        "style": null
-                    },
-                    "name": "MySeparator",
-                    "designerId": "475966f3-7089-43ca-b8fd-f449a5271d7b"
-                },
-                {
                     "type": "Ext.menu.Item",
                     "reference": {
                         "name": "items",
@@ -103,7 +90,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "baseCls": "x-menu-item mainMenuItem",
+                        "baseCls": null,
+                        "glyph": "x2709@glyphicons",
                         "id": "notificationsMenuItem",
                         "style": null,
                         "text": "Notifiche"
@@ -115,20 +103,6 @@
                     "designerId": "c4dae8de-ee07-4709-bc52-bcf8535ece4d"
                 },
                 {
-                    "type": "Ext.menu.Separator",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "hidden": true,
-                        "id": "middleSeparator"
-                    },
-                    "name": "MySeparator1",
-                    "designerId": "23f35323-5ee6-4a28-ada4-859e8b9701a8"
-                },
-                {
                     "type": "Ext.menu.Item",
                     "reference": {
                         "name": "items",
@@ -136,7 +110,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "baseCls": "x-menu-item mainMenuItem",
+                        "baseCls": null,
+                        "glyph": "xe056@glyphicons",
                         "id": "browseMenuItem",
                         "style": null,
                         "text": "Sfoglia"
@@ -169,20 +144,6 @@
                     ]
                 },
                 {
-                    "type": "Ext.menu.Separator",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "hidden": true,
-                        "id": "bottomSeparator"
-                    },
-                    "name": "MySeparator2",
-                    "designerId": "ca1a0276-4265-4fdc-9d58-09e4fd10042b"
-                },
-                {
                     "type": "Ext.menu.Item",
                     "reference": {
                         "name": "items",
@@ -190,7 +151,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "baseCls": "x-menu-item mainMenuItem",
+                        "baseCls": null,
+                        "glyph": "xe149@glyphicons",
                         "id": "settingsMenuItem",
                         "style": null,
                         "text": "Acquista e configura"

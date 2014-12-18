@@ -21,8 +21,7 @@ Ext.define('Domino.view.LoginPanel', {
         'Domino.view.LoginPanelViewModel',
         'Domino.view.LoginPanelViewController',
         'Ext.menu.Menu',
-        'Ext.menu.Item',
-        'Ext.XTemplate'
+        'Ext.menu.Item'
     ],
 
     controller: 'loginpanel',
@@ -42,9 +41,6 @@ Ext.define('Domino.view.LoginPanel', {
             floating: false,
             id: 'loginMenu',
             itemId: 'loginMenu',
-            tpl: [
-                'Link:<a>{title}<a>'
-            ],
             width: '100%',
             items: [
                 {

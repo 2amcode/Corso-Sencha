@@ -49,10 +49,10 @@ Ext.define('Domino.view.LoginPage', {
                     xtype: 'container',
                     flex: 1,
                     region: 'center',
+                    baseCls: 'x-container centerContainer',
                     id: 'centerContainer',
                     itemId: 'centerContainer',
                     margin: 50,
-                    style: 'background:#F9C068;',
                     layout: 'border',
                     items: [
                         {

@@ -84,60 +84,96 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "container|align": "stretch",
                         "id": "userContainer",
                         "itemId": "userContainer",
+                        "layout": "vbox",
                         "layout|flex": 1
                     },
                     "name": "MyContainer8",
                     "designerId": "d0cf79a2-368d-41aa-8087-2d1b8cb69933",
                     "cn": [
                         {
-                            "type": "Ext.form.Label",
+                            "type": "Ext.container.Container",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "id": "userNameSpan",
-                                "itemId": "userNameSpan",
-                                "text": "Michele Rubin"
+                                "baseCls": "x-container usernameContainer",
+                                "id": "usernameContainer",
+                                "itemId": "usernameContainer"
                             },
-                            "name": "MyLabel",
-                            "designerId": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "id": "logoutCmd",
-                                "itemId": "logoutCmd",
-                                "text": "Logout"
-                            },
-                            "name": "MyButton2",
-                            "designerId": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
+                            "name": "MyContainer",
+                            "designerId": "7142ca41-82d5-44c5-b1c1-80570611d77f",
                             "cn": [
                                 {
-                                    "type": "viewcontrollereventbinding",
+                                    "type": "Ext.form.Label",
                                     "reference": {
-                                        "name": "listeners",
+                                        "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "fn": "onLogoutCmdClick",
-                                        "implHandler": [
-                                            "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(0);"
-                                        ],
-                                        "name": "click",
-                                        "scope": "me"
+                                        "id": "userNameSpan",
+                                        "itemId": "userNameSpan",
+                                        "text": "Michele Rubin"
                                     },
-                                    "name": "onLogoutCmdClick",
-                                    "designerId": "49dd7b73-962c-4823-8327-defb5ab09028"
+                                    "name": "MyLabel",
+                                    "designerId": "80656c59-f86f-41a7-a0d9-edd92b3a1f61"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "x-container logoutCmdContainer",
+                                "id": "logoutCmdContainer",
+                                "itemId": "logoutCmdContainer"
+                            },
+                            "name": "MyContainer6",
+                            "designerId": "9199cce7-138f-45a0-bd97-5af2aa7f376e",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "logoutCmd",
+                                        "itemId": "logoutCmd",
+                                        "text": "Logout"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "3d8d5120-43b3-4ce2-b1f2-956d67294063",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onLogoutCmdClick",
+                                                "implHandler": [
+                                                    "Ext.ComponentQuery.query(\"#mainViewport\")[0].setActiveItem(0);"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onLogoutCmdClick",
+                                            "designerId": "49dd7b73-962c-4823-8327-defb5ab09028"
+                                        }
+                                    ]
                                 }
                             ]
                         }

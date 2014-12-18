@@ -21,7 +21,7 @@ Ext.define('Domino.view.MenuPanel', {
         'Domino.view.MenuPanelViewModel',
         'Domino.view.MenuPanelViewController',
         'Ext.menu.Menu',
-        'Ext.menu.Separator'
+        'Ext.menu.Item'
     ],
 
     controller: 'menupanel',
@@ -42,51 +42,37 @@ Ext.define('Domino.view.MenuPanel', {
             floating: false,
             id: 'mainMenu',
             itemId: 'mainMenu',
+            ui: 'dashmenu',
             width: 120,
             items: [
                 {
                     xtype: 'menuitem',
-                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'dashMenuItem',
+                    glyph: 'xe043@glyphicons',
                     text: 'Dashboard',
                     listeners: {
                         click: 'onDashMenuItemClick'
                     }
                 },
                 {
-                    xtype: 'menuseparator',
-                    hidden: true,
-                    id: 'topSeparator'
-                },
-                {
                     xtype: 'menuitem',
-                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'notificationsMenuItem',
+                    glyph: 'x2709@glyphicons',
                     text: 'Notifiche'
                 },
                 {
-                    xtype: 'menuseparator',
-                    hidden: true,
-                    id: 'middleSeparator'
-                },
-                {
                     xtype: 'menuitem',
-                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'browseMenuItem',
+                    glyph: 'xe056@glyphicons',
                     text: 'Sfoglia',
                     listeners: {
                         click: 'onBrowseMenuItemClick'
                     }
                 },
                 {
-                    xtype: 'menuseparator',
-                    hidden: true,
-                    id: 'bottomSeparator'
-                },
-                {
                     xtype: 'menuitem',
-                    baseCls: 'x-menu-item mainMenuItem',
                     id: 'settingsMenuItem',
+                    glyph: 'xe149@glyphicons',
                     text: 'Acquista e configura'
                 }
             ]

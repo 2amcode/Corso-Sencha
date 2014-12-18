@@ -10,6 +10,7 @@
         "designer|snapToGrid": 10,
         "designer|userAlias": "dashpanel",
         "designer|userClassName": "DashPanel",
+        "glyph": null,
         "header": false,
         "id": "dashPanel",
         "itemId": "dashPanel",
