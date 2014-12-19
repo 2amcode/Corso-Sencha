@@ -17,6 +17,13 @@ Ext.define('Domino.view.BrowsePanelViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.browsepanel',
 
+    onBrowseDetailSelect: function(rowmodel, record, index, eOpts) {
+        var me = this;
+        debugger;
+        me.view.down("#leftDetailPanel").data = record.data;
+
+    },
+
     onMenuitemClick: function(item, e, eOpts) {
 
 

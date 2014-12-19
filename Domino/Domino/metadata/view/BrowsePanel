@@ -8,6 +8,7 @@
     "userConfig": {
         "animCollapse": true,
         "container|align": "stretch",
+        "designer|initialView": true,
         "designer|userAlias": "browsepanel",
         "designer|userClassName": "BrowsePanel",
         "header": false,
@@ -139,6 +140,87 @@
                     },
                     "name": "MyColumn6",
                     "designerId": "dcd770ba-5212-4348-b8bf-71cff7aa0d6d"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "leftDetailPanel",
+                        "designer|snapToGrid": 10,
+                        "dock": "right",
+                        "itemId": "leftDetailPanel",
+                        "layout": "absolute",
+                        "style": null,
+                        "title": "Dettaglio",
+                        "width": 700
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "56eed484-35d9-4eaf-a62e-108b99cd97c4",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "blankText": "sdfsdfsdf",
+                                "emptyText": "asdasdas",
+                                "fieldLabel": "Description",
+                                "layout|x": 60,
+                                "layout|y": 190,
+                                "value": [
+                                    "{description}"
+                                ]
+                            },
+                            "name": "MyTextField2",
+                            "configAlternates": {
+                                "value": "binding"
+                            },
+                            "designerId": "8c725907-40c1-4638-985d-fc1d32aefc99"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 147,
+                                "layout|y": 314,
+                                "text": "MyButton"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "002e6532-54b7-4ed1-b9f1-48da720ad652"
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onBrowseDetailSelect",
+                        "implHandler": [
+                            "var me = this;",
+                            "debugger;",
+                            "me.view.down(\"#leftDetailPanel\").data = record.data;",
+                            ""
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "name": "onBrowseDetailSelect",
+                    "designerId": "00d264ab-65cb-4620-af1f-11076eb24288"
                 }
             ]
         },

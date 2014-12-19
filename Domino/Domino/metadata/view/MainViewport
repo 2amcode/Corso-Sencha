@@ -7,7 +7,6 @@
     "codeClass": null,
     "userConfig": {
         "container|deferredRender": null,
-        "designer|initialView": true,
         "designer|userAlias": "MainViewport",
         "designer|userClassName": "MainViewport",
         "id": "loginViewport",

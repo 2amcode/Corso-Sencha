@@ -23,6 +23,8 @@ Ext.define('Domino.view.BrowsePanel', {
         'Ext.grid.Panel',
         'Ext.grid.View',
         'Ext.grid.column.Column',
+        'Ext.form.field.Text',
+        'Ext.button.Button',
         'Ext.menu.Menu',
         'Ext.menu.Item'
     ],
@@ -83,7 +85,40 @@ Ext.define('Domino.view.BrowsePanel', {
                     dataIndex: 'bornCountry',
                     text: 'BornCountry'
                 }
-            ]
+            ],
+            dockedItems: [
+                {
+                    xtype: 'panel',
+                    dock: 'right',
+                    cls: 'leftDetailPanel',
+                    itemId: 'leftDetailPanel',
+                    width: 700,
+                    layout: 'absolute',
+                    title: 'Dettaglio',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            x: 60,
+                            y: 190,
+                            fieldLabel: 'Description',
+                            blankText: 'sdfsdfsdf',
+                            emptyText: 'asdasdas',
+                            bind: {
+                                value: '{description}'
+                            }
+                        },
+                        {
+                            xtype: 'button',
+                            x: 147,
+                            y: 314,
+                            text: 'MyButton'
+                        }
+                    ]
+                }
+            ],
+            listeners: {
+                select: 'onBrowseDetailSelect'
+            }
         }
     ],
     dockedItems: [

@@ -38,7 +38,7 @@ Ext.application({
     name: 'Domino',
 
     launch: function() {
-        Ext.create('Domino.view.MainViewport');
+        Ext.create('Domino.view.BrowsePanel', {renderTo: Ext.getBody()});
     }
 
 });
