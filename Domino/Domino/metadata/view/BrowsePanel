@@ -142,7 +142,7 @@
                     "designerId": "dcd770ba-5212-4348-b8bf-71cff7aa0d6d"
                 },
                 {
-                    "type": "Ext.panel.Panel",
+                    "type": "Ext.form.Panel",
                     "reference": {
                         "name": "dockedItems",
                         "type": "array"
@@ -152,13 +152,17 @@
                         "cls": "leftDetailPanel",
                         "designer|snapToGrid": 10,
                         "dock": "right",
+                        "height": "",
                         "itemId": "leftDetailPanel",
                         "layout": "absolute",
                         "style": null,
                         "title": "Dettaglio",
                         "width": 700
                     },
-                    "name": "MyPanel2",
+                    "name": "MyForm",
+                    "configAlternates": {
+                        "viewModel": "binding"
+                    },
                     "designerId": "56eed484-35d9-4eaf-a62e-108b99cd97c4",
                     "cn": [
                         {
@@ -169,35 +173,28 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "bind": null,
                                 "blankText": "sdfsdfsdf",
                                 "emptyText": "asdasdas",
                                 "fieldLabel": "Description",
-                                "layout|x": 60,
-                                "layout|y": 190,
+                                "layout|x": 280,
+                                "layout|y": 50,
                                 "value": [
-                                    "{description}"
+                                    "{rec.description}"
                                 ]
                             },
                             "name": "MyTextField2",
                             "configAlternates": {
                                 "value": "binding"
                             },
-                            "designerId": "8c725907-40c1-4638-985d-fc1d32aefc99"
-                        },
-                        {
-                            "type": "Ext.button.Button",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "layout|x": 147,
-                                "layout|y": 314,
-                                "text": "MyButton"
-                            },
-                            "name": "MyButton3",
-                            "designerId": "002e6532-54b7-4ed1-b9f1-48da720ad652"
+                            "designerId": "8c725907-40c1-4638-985d-fc1d32aefc99",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "bind",
+                                    "type": "string"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -212,8 +209,9 @@
                         "fn": "onBrowseDetailSelect",
                         "implHandler": [
                             "var me = this;",
-                            "debugger;",
-                            "me.view.down(\"#leftDetailPanel\").data = record.data;",
+                            "// è necessario passare un oggetto arbitrario rec (o altro nome) per poterlo puntare dal binding",
+                            "me.view.down(\"#leftDetailPanel\").up('#browsePanel').getViewModel().setData({rec:record});",
+                            "",
                             ""
                         ],
                         "name": "select",

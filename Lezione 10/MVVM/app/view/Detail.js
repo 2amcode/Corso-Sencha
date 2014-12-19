@@ -33,20 +33,20 @@ Ext.define('MVVM.view.Detail', {
     items: [
         {
             xtype: 'textfield',
-            anchor: '100%',
             bind: '{rec.name}',
+            anchor: '100%',
             fieldLabel: 'Name'
         },
         {
             xtype: 'textfield',
-            anchor: '100%',
             bind: '{rec.email}',
+            anchor: '100%',
             fieldLabel: 'Email'
         },
         {
             xtype: 'textfield',
-            anchor: '100%',
             bind: '{rec.phone}',
+            anchor: '100%',
             fieldLabel: 'Phone'
         },
         {

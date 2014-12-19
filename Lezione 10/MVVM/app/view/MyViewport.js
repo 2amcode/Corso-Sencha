@@ -36,8 +36,8 @@ Ext.define('MVVM.view.MyViewport', {
     items: [
         {
             xtype: 'MasterView',
-            flex: 2,
-            width: 187
+            width: 187,
+            flex: 2
         },
         {
             xtype: 'DetailView',

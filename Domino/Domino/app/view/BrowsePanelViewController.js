@@ -19,8 +19,9 @@ Ext.define('Domino.view.BrowsePanelViewController', {
 
     onBrowseDetailSelect: function(rowmodel, record, index, eOpts) {
         var me = this;
-        debugger;
-        me.view.down("#leftDetailPanel").data = record.data;
+        // è necessario passare un oggetto arbitrario rec (o altro nome) per poterlo puntare dal binding
+        me.view.down("#leftDetailPanel").up('#browsePanel').getViewModel().setData({rec:record});
+
 
     },
 

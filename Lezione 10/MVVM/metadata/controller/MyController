@@ -26,10 +26,10 @@
                 "fn": "init",
                 "implHandler": [
                     "this.control({",
-                    "             'MasterView': {",
-                    "                 select : this.onGridSelect",
-                    "             }",
-                    "         });"
+                    "    'MasterView': {",
+                    "        select : this.onGridSelect",
+                    "    }",
+                    "});"
                 ]
             },
             "name": "init",

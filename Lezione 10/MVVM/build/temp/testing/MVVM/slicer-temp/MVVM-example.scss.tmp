@@ -1,4 +1,4 @@
-$image-search-path: '/Users/superandrew/Documents/xcode/MVVM/build/testing/MVVM/resources';
+$image-search-path: '/Users/superandrew/Documents/xcode/Corso-Sencha/Lezione 10/MVVM/build/testing/MVVM/resources';
 $theme-name:  'ext-theme-crisp-c82db6a8-3446-4916-99a7-f2de11cc1d05' !default;
 $include-ext-abstractmanager: true;
 $include-ext-action: true;
@@ -717,8 +717,18 @@ $include-extthemeneptune-picker-month: true;
 $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
+$include-mvvm-controller-mycontroller: true;
 $include-mvvm-model-person: true;
 $include-mvvm-store-people: true;
+$include-mvvm-view-detail: true;
+$include-mvvm-view-detailviewcontroller: true;
+$include-mvvm-view-detailviewmodel: true;
+$include-mvvm-view-master: true;
+$include-mvvm-view-masterviewcontroller: true;
+$include-mvvm-view-masterviewmodel: true;
+$include-mvvm-view-myviewport: true;
+$include-mvvm-view-myviewportviewcontroller: true;
+$include-mvvm-view-myviewportviewmodel: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */

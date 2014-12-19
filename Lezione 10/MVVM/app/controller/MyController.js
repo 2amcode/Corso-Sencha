@@ -19,10 +19,10 @@ Ext.define('MVVM.controller.MyController', {
 
     init: function(application) {
         this.control({
-                     'MasterView': {
-                         select : this.onGridSelect
-                     }
-                 });
+            'MasterView': {
+                select : this.onGridSelect
+            }
+        });
     },
 
     onGridSelect: function(grid, record, index, eOpts) {

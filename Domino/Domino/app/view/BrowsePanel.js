@@ -23,8 +23,8 @@ Ext.define('Domino.view.BrowsePanel', {
         'Ext.grid.Panel',
         'Ext.grid.View',
         'Ext.grid.column.Column',
+        'Ext.form.Panel',
         'Ext.form.field.Text',
-        'Ext.button.Button',
         'Ext.menu.Menu',
         'Ext.menu.Item'
     ],
@@ -88,9 +88,10 @@ Ext.define('Domino.view.BrowsePanel', {
             ],
             dockedItems: [
                 {
-                    xtype: 'panel',
+                    xtype: 'form',
                     dock: 'right',
                     cls: 'leftDetailPanel',
+                    height: '',
                     itemId: 'leftDetailPanel',
                     width: 700,
                     layout: 'absolute',
@@ -98,20 +99,14 @@ Ext.define('Domino.view.BrowsePanel', {
                     items: [
                         {
                             xtype: 'textfield',
-                            x: 60,
-                            y: 190,
+                            x: 280,
+                            y: 50,
                             fieldLabel: 'Description',
                             blankText: 'sdfsdfsdf',
                             emptyText: 'asdasdas',
                             bind: {
-                                value: '{description}'
+                                value: '{rec.description}'
                             }
-                        },
-                        {
-                            xtype: 'button',
-                            x: 147,
-                            y: 314,
-                            text: 'MyButton'
                         }
                     ]
                 }
