@@ -102,10 +102,8 @@ Ext.define('Domino.view.BrowsePanel', {
                             x: 280,
                             y: 10,
                             fieldLabel: 'Description',
-                            blankText: 'sdfsdfsdf',
-                            emptyText: 'asdasdas',
                             bind: {
-                                value: '{rec.description}'
+                                value: '{detail.firstname}'
                             }
                         }
                     ]

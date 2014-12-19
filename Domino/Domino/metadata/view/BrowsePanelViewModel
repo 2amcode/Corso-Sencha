@@ -140,17 +140,19 @@
             ]
         },
         {
-            "type": "jsonstore",
+            "type": "Ext.data.Store",
             "reference": {
                 "name": "stores",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
+                "autoLoad": true,
                 "designer|displayName": "SubjectDetailStore",
-                "model": "SubjectModel"
+                "model": "SubjectModel",
+                "name": "subjectDetailStore"
             },
-            "name": "MyJsonStore",
+            "name": "MyStore2",
             "designerId": "5bb7ffb3-bd5a-4e5f-95e8-7d60d93a9bb1",
             "cn": [
                 {

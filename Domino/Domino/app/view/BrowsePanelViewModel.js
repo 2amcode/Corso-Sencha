@@ -57,6 +57,18 @@ Ext.define('Domino.view.BrowsePanelViewModel', {
                     name: 'id'
                 }
             ]
+        },
+        subjectDetailStore: {
+            autoLoad: true,
+            model: 'Domino.model.SubjectModel',
+            proxy: {
+                type: 'ajax',
+                url: 'data/Soggetto1.json',
+                reader: {
+                    type: 'json',
+                    rootProperty: 'subject'
+                }
+            }
         }
     }
 

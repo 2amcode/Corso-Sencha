@@ -160,9 +160,6 @@
                         "width": 700
                     },
                     "name": "MyForm",
-                    "configAlternates": {
-                        "viewModel": "binding"
-                    },
                     "designerId": "56eed484-35d9-4eaf-a62e-108b99cd97c4",
                     "cn": [
                         {
@@ -174,13 +171,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "bind": null,
-                                "blankText": "sdfsdfsdf",
-                                "emptyText": "asdasdas",
+                                "blankText": null,
+                                "emptyText": null,
                                 "fieldLabel": "Description",
                                 "layout|x": 280,
                                 "layout|y": 10,
                                 "value": [
-                                    "{rec.description}"
+                                    "{detail.firstname}"
                                 ]
                             },
                             "name": "MyTextField2",
@@ -209,8 +206,23 @@
                         "fn": "onBrowseDetailSelect",
                         "implHandler": [
                             "var me = this;",
+                            "",
+                            "me.view.getViewModel().storeInfo.subjectDetailStore.onUpdate = function(data){",
+                            "",
+                            "    console.log(data);",
+                            "};",
+                            "me.view.getViewModel().storeInfo.subjectDetailStore.load({",
+                            "",
+                            "            callback : function(records, options, success) {",
+                            "                debugger;",
+                            "                if (success) {",
+                            "                    me.view.getViewModel().setData({detail:records[0]});",
+                            "                }",
+                            "            }",
+                            "});",
                             "// è necessario passare un oggetto arbitrario rec (o altro nome) per poterlo puntare dal binding",
-                            "me.view.down(\"#leftDetailPanel\").up('#browsePanel').getViewModel().setData({rec:record});",
+                            "",
+                            "",
                             "",
                             ""
                         ],
