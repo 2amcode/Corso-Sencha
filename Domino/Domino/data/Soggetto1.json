@@ -1,1 +1,96 @@
-{"subject":{"id":1,"description":"Marco Zimello","bornLocality":"PADOVA","bornRegion":"PADOVA","bornTerritory":"VENETO","bornCountry":"ITALIA","addresses":[{"description":"[Res] Rag. Marco Zimello Via Mia 1 35125 PADOVA (PD)"},{"description":"[Uff] Via Savelli 24 35127 PADOVA (PD)"}],"contacts":[{"description":"[T per] 3487932660"},{"description":"[E per] marcozimello@gmail.com"}]},"include":[{"addresses":[{"id":1,"addressType":{"id":1,"description":"Indirizzo residenza"},"addressee":"Rag. Marco Zimello","street":"Via Mia 1","postalCode":"35125","links":[{"rel":"self","href":"http://localhost:8081/TecSisNet.IrideGroovy.Services/address/show/1"}]},{"id":2,"addressType":{"id":3,"description":"Indirizzo professionale"},"street":"Via Savelli 24","postalCode":"35127","links":[{"rel":"self","href":"http://localhost:8081/TecSisNet.IrideGroovy.Services/address/show/2"}]}]},{"contacts":[{"id":1,"contactType":{"id":1,"description":"Telefono personale"},"description":"3487932660","links":[{"rel":"self","href":"http://localhost:8081/TecSisNet.IrideGroovy.Services/contact/show/1"}]},{"id":2,"contactType":{"id":5,"description":"Email personale"},"description":"marcozimello@gmail.com","links":[{"rel":"self","href":"http://localhost:8081/TecSisNet.IrideGroovy.Services/contact/show/2"}]}]}]}
+{
+  "subject" : {
+    "bornCountry" : "ITALIA",
+    "id" : 1,
+    "addresses" : [
+      {
+        "description" : "[Res] Rag. Marco Zimello Via Mia 1 35125 PADOVA (PD)"
+      },
+      {
+        "description" : "[Uff] Via Savelli 24 35127 PADOVA (PD)"
+      }
+    ],
+    "contacts" : [
+      {
+        "description" : "[T per] 3487932660"
+      },
+      {
+        "description" : "[E per] marcozimello@gmail.com"
+      }
+    ],
+    "firstname" : "Marco",
+    "surname" : "Zimello",
+    "bornLocality" : "PADOVA",
+    "bornRegion" : "PADOVA",
+    "bornTerritory" : "VENETO"
+  },
+  "include" : [
+    {
+      "addresses" : [
+        {
+          "id" : 1,
+          "links" : [
+            {
+              "rel" : "self",
+              "href" : "http:\/\/localhost:8081\/TecSisNet.IrideGroovy.Services\/address\/show\/1"
+            }
+          ],
+          "addressee" : "Rag. Marco Zimello",
+          "addressType" : {
+            "id" : 1,
+            "description" : "Indirizzo residenza"
+          },
+          "street" : "Via Mia 1",
+          "postalCode" : "35125"
+        },
+        {
+          "id" : 2,
+          "links" : [
+            {
+              "rel" : "self",
+              "href" : "http:\/\/localhost:8081\/TecSisNet.IrideGroovy.Services\/address\/show\/2"
+            }
+          ],
+          "street" : "Via Savelli 24",
+          "addressType" : {
+            "id" : 3,
+            "description" : "Indirizzo professionale"
+          },
+          "postalCode" : "35127"
+        }
+      ]
+    },
+    {
+      "contacts" : [
+        {
+          "id" : 1,
+          "contactType" : {
+            "id" : 1,
+            "description" : "Telefono personale"
+          },
+          "links" : [
+            {
+              "rel" : "self",
+              "href" : "http:\/\/localhost:8081\/TecSisNet.IrideGroovy.Services\/contact\/show\/1"
+            }
+          ],
+          "description" : "3487932660"
+        },
+        {
+          "id" : 2,
+          "contactType" : {
+            "id" : 5,
+            "description" : "Email personale"
+          },
+          "links" : [
+            {
+              "rel" : "self",
+              "href" : "http:\/\/localhost:8081\/TecSisNet.IrideGroovy.Services\/contact\/show\/2"
+            }
+          ],
+          "description" : "marcozimello@gmail.com"
+        }
+      ]
+    }
+  ]
+}

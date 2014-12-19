@@ -100,7 +100,7 @@ Ext.define('Domino.view.BrowsePanel', {
                         {
                             xtype: 'textfield',
                             x: 280,
-                            y: 50,
+                            y: 10,
                             fieldLabel: 'Description',
                             blankText: 'sdfsdfsdf',
                             emptyText: 'asdasdas',

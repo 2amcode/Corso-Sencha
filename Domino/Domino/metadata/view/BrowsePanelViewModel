@@ -138,6 +138,50 @@
                     "designerId": "4f9eea16-2f38-415e-ab35-dcd037b89774"
                 }
             ]
+        },
+        {
+            "type": "jsonstore",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "SubjectDetailStore",
+                "model": "SubjectModel"
+            },
+            "name": "MyJsonStore",
+            "designerId": "5bb7ffb3-bd5a-4e5f-95e8-7d60d93a9bb1",
+            "cn": [
+                {
+                    "type": "Ext.data.proxy.Ajax",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "data/Soggetto1.json"
+                    },
+                    "name": "MyAjaxProxy2",
+                    "designerId": "60dd8d73-b614-47b4-a0cd-729917a94c32",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "rootProperty": "subject"
+                            },
+                            "name": "MyJsonReader2",
+                            "designerId": "bd8def7e-cfe5-4c51-b339-f7eb315db0d5"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

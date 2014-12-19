@@ -178,7 +178,7 @@
                                 "emptyText": "asdasdas",
                                 "fieldLabel": "Description",
                                 "layout|x": 280,
-                                "layout|y": 50,
+                                "layout|y": 10,
                                 "value": [
                                     "{rec.description}"
                                 ]

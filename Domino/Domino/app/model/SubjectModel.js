@@ -38,6 +38,12 @@ Ext.define('Domino.model.SubjectModel', {
         },
         {
             name: 'bornTerritory'
+        },
+        {
+            name: 'firstname'
+        },
+        {
+            name: 'surname'
         }
     ]
 });
